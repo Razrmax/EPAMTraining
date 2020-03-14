@@ -1,0 +1,11 @@
+C:\Users\maxim\Desktop\Programming\EPAMTraining\EPAMTraining\EPAMTraining\bin\Debug\netcoreapp3.1\EPAMTraining.exe
+C:\Users\maxim\Desktop\Programming\EPAMTraining\EPAMTraining\EPAMTraining\bin\Debug\netcoreapp3.1\EPAMTraining.deps.json
+C:\Users\maxim\Desktop\Programming\EPAMTraining\EPAMTraining\EPAMTraining\bin\Debug\netcoreapp3.1\EPAMTraining.runtimeconfig.json
+C:\Users\maxim\Desktop\Programming\EPAMTraining\EPAMTraining\EPAMTraining\bin\Debug\netcoreapp3.1\EPAMTraining.runtimeconfig.dev.json
+C:\Users\maxim\Desktop\Programming\EPAMTraining\EPAMTraining\EPAMTraining\bin\Debug\netcoreapp3.1\EPAMTraining.dll
+C:\Users\maxim\Desktop\Programming\EPAMTraining\EPAMTraining\EPAMTraining\bin\Debug\netcoreapp3.1\EPAMTraining.pdb
+C:\Users\maxim\Desktop\Programming\EPAMTraining\EPAMTraining\EPAMTraining\obj\Debug\netcoreapp3.1\EPAMTraining.AssemblyInfoInputs.cache
+C:\Users\maxim\Desktop\Programming\EPAMTraining\EPAMTraining\EPAMTraining\obj\Debug\netcoreapp3.1\EPAMTraining.AssemblyInfo.cs
+C:\Users\maxim\Desktop\Programming\EPAMTraining\EPAMTraining\EPAMTraining\obj\Debug\netcoreapp3.1\EPAMTraining.dll
+C:\Users\maxim\Desktop\Programming\EPAMTraining\EPAMTraining\EPAMTraining\obj\Debug\netcoreapp3.1\EPAMTraining.pdb
+C:\Users\maxim\Desktop\Programming\EPAMTraining\EPAMTraining\EPAMTraining\obj\Debug\netcoreapp3.1\EPAMTraining.csprojAssemblyReference.cache
