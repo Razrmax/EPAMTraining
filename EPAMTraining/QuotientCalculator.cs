@@ -20,12 +20,11 @@ namespace EPAMTraining
         //Also processing overflow and wrong number formats
         static int GetNumberInput()
         {
-            int number;
             do
             {
                 try
                 {
-                    number = Convert.ToInt32(Console.ReadLine());
+                    int number = Convert.ToInt32(Console.ReadLine());
                     if (number == 0)
                     {
                         continue;
@@ -45,7 +44,7 @@ namespace EPAMTraining
 
         static double CalcQuotient(int[] numbers)
         {
-            double result = ((double)numbers[0] / (double)numbers[1]);
+            double result = (double)numbers[0] / numbers[1];
             return result;
         }
     }

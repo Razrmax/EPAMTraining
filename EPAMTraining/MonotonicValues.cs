@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace EPAMTraining
 {
@@ -20,14 +18,13 @@ namespace EPAMTraining
         static double CalcTotalSum(double x, double eps)
         {
             double totalSum = 0;
-            int n = 0;                                              
-            double element;                                                // result of current n iteration to be added to sum
+            int n = 0;
             double divider = 1;                                             // divider (2n+1)! - a factorial
             do
             {
                 divider *= (2 * n + 1);
-                
-                element = Math.Pow(-1, n) * (Math.Pow(x, 2 * n++ + 1) / divider);
+
+                double element = Math.Pow(-1, n) * (Math.Pow(x, 2 * n++ + 1) / divider);
                 if (Math.Abs(element) < eps)
                 {
                     break;
@@ -40,13 +37,12 @@ namespace EPAMTraining
 
         static double GetNumberInput()
         {
-            double number;
             do
             {
                 try
                 {
-                    number = Convert.ToDouble(Console.ReadLine());
-                    return number;                    
+                    double number = Convert.ToDouble(Console.ReadLine());
+                    return number;
                 }
                 catch (OverflowException)
                 {

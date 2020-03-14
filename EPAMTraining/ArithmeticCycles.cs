@@ -31,12 +31,11 @@ namespace EPAMTraining
         //Get numbers from the user
         static int GetNumberInput()
         {
-            int number;
             do
             {
                 try
                 {
-                    number = Convert.ToInt32(Console.ReadLine());
+                    int number = Convert.ToInt32(Console.ReadLine());
                     if (number == 0)                                            //Avoid division by or of '0'
                     {
                         continue;
@@ -55,7 +54,7 @@ namespace EPAMTraining
             } while (true);
         }
 
-        //Calculate the Total Sum of the whole Equation based on formulae
+        //Calculate the Total Sum of the whole Equation based on formula
         private static double CalcTotalSum(int k, int x, int[] factorials)
         {
             double totalSum = 0;

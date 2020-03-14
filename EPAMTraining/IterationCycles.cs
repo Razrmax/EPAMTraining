@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 /* Лабораторная работа по теме "Итерационные циклы", ВАРИАНТ: 4
  * Найти корень уравнения на отрезке [a(1.2); b(2)] с точностью " указанным в варианте методом и способом контроля - */
 
@@ -24,12 +22,11 @@ namespace EPAMTraining
 
         static double GetNumberInput()
         {
-            double number;
             do
             {
                 try
                 {
-                    number = Convert.ToDouble(Console.ReadLine());
+                    double number = Convert.ToDouble(Console.ReadLine());
                     if (number > 0 && number < 0.8)
                     {
                         return number;
@@ -55,10 +52,9 @@ namespace EPAMTraining
 
         static double SolveEquation(double a, double b, double eps)
         {
-            double c;
             while ((b - a) > eps)
             {
-                c = (b + a) / 2;
+                double c = (b + a) / 2;
                 if (Func(a) * Func(c) < 0)
                 {
                     b = c;
