@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj": {}
+    "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj": {
+    "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj",
+        "projectUniqueName": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj",
         "projectName": "EPAMTraining",
-        "projectPath": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj",
+        "projectPath": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj",
         "packagesPath": "C:\\Users\\maxim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining\\obj\\",
+        "outputPath": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",

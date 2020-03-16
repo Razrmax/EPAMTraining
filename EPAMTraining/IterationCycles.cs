@@ -16,9 +16,10 @@ namespace EPAMTraining
             Console.WriteLine("Please enter the eps value (0 < eps < 0.8): ");
             double eps = GetNumberInput();
             double equationRoot = SolveEquation(a, b, eps);
-            Console.WriteLine("Equation root: {0:N4}", equationRoot);
+            Console.WriteLine("Equation root: {0:N4}\nFunction: {0:N4}", equationRoot, Func(equationRoot));
             Console.ReadLine();
         }
+        
 
         static double GetNumberInput()
         {

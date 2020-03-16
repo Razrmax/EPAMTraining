@@ -1,6 +1,6 @@
 ﻿using System;
 
-/* Write the program calculating the Sum including the first k:
+/* Write the program calculating the Sum including the first k: Доработать по рекурентному 
           k      cos(Pi/4)
     S = E Sum    --------- * x^n
          n = 0      n!
@@ -21,9 +21,8 @@ namespace EPAMTraining
             }
             int k = inputValues[0];
             int x = inputValues[1];
-            int[] factorials = CalcFactorials(k);
 
-            double totalSum = CalcTotalSum(k, x, factorials);
+            double totalSum = CalcTotalSum(k, x);
             Console.WriteLine("Result: {0:N4}", totalSum);
             Console.ReadLine();
         }
@@ -36,10 +35,6 @@ namespace EPAMTraining
                 try
                 {
                     int number = Convert.ToInt32(Console.ReadLine());
-                    if (number == 0)                                            //Avoid division by or of '0'
-                    {
-                        continue;
-                    }
                     return number;
                 }
                 catch (OverflowException)
@@ -55,27 +50,26 @@ namespace EPAMTraining
         }
 
         //Calculate the Total Sum of the whole Equation based on formula
-        private static double CalcTotalSum(int k, int x, int[] factorials)
+        private static double CalcTotalSum(int k, int x)
         {
             double totalSum = 0;
+            double divider = 1;
+            double multiplier = x;
             for (int n = 0; n < k; n++)
             {
-                totalSum += (Math.Cos(Math.PI / 4) / factorials[n] * Math.Pow(x, n));
+                if (n == 0)
+                {
+                    multiplier = 1;
+                }
+                if (n > 1)
+                {
+                    divider *= n;
+                    multiplier *= multiplier;
+                }
+
+                totalSum += (Math.Cos(Math.PI / 4) / x * multiplier);
             }
             return totalSum;
-        }
-
-        //Calculate factorial of k
-        private static int[] CalcFactorials(int k)
-        {
-            int[] factorials = new int[k];
-            factorials[0] = 1;
-            for (int i = 1; i < k; i++)
-            {
-                factorials[i] = factorials[i - 1] * i;
-            }
-
-            return factorials;
         }
     }
 }
