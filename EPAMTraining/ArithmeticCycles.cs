@@ -54,20 +54,19 @@ namespace EPAMTraining
         {
             double totalSum = 0;
             double divider = 1;
-            double multiplier = x;
-            for (int n = 0; n < k; n++)
-            {
-                if (n == 0)
-                {
-                    multiplier = 1;
-                }
-                if (n > 1)
-                {
-                    divider *= n;
-                    multiplier *= multiplier;
-                }
+            int originalX = x;
+            int n = 0;
 
-                totalSum += (Math.Cos(Math.PI / 4) / x * multiplier);
+            for (; n <= 1 && n <= k; n++)
+            {
+                x = (int)Math.Pow(originalX, n);
+                totalSum += (Math.Cos(Math.PI / 4) * x);
+            }
+            for (; n <= k; n++)
+            {
+                divider *= n;
+                x *= originalX;
+                totalSum += (Math.Cos(Math.PI / 4) / divider * x);
             }
             return totalSum;
         }

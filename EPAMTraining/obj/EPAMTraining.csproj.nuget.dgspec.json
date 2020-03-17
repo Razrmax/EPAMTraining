@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj": {}
+    "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj": {
+    "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj",
+        "projectUniqueName": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj",
         "projectName": "EPAMTraining",
-        "projectPath": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj",
-        "packagesPath": "C:\\Users\\maxim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\obj\\",
+        "projectPath": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj",
+        "packagesPath": "C:\\Users\\Maxim\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

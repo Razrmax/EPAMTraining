@@ -19,7 +19,7 @@ namespace EPAMTraining
             Console.WriteLine("Equation root: {0:N4}\nFunction: {0:N4}", equationRoot, Func(equationRoot));
             Console.ReadLine();
         }
-        
+
 
         static double GetNumberInput()
         {

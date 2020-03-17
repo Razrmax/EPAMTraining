@@ -1,18 +1,39 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+
+//
 
 namespace EPAMTraining.Lab16_03_19
 {
     class BinaryConverter
     {
-        static void Main()
+        static void Main(string[] args)
         {
-            Console.WriteLine("Please enter any positive whole number: ");
+            Console.Write("Please enter any positive whole number: ");
             int number = GetNumberInput();
             string binaryString = ConvertDecimalToBinary(number);
-            Console.WriteLine(binaryString);
-            
+            string customBinaryString = CustomConvertDecimalToBinary(number);
+            Console.WriteLine(".NET embedded binary representation of {0}: {1}", number, binaryString);
+            Console.WriteLine("Custom implemented representation of {0}: {1}", number, binaryString);
+            Console.ReadLine();
+        }
+
+        static string CustomConvertDecimalToBinary(int number)
+        {
+            int length = CountBits(number);
+            char[] bitMask = new char[length];
+            for (int i = length - 1; i >= 0; i--)
+            {
+                bitMask[i] = (number % 2 == 0) ? '0' : '1';
+                number /= 2;
+            }
+            string binary = new string(bitMask);
+
+            return binary;
+        }
+
+        static int CountBits(int number)
+        {
+            return (int)Math.Log(number, 2.0) + 1;
         }
 
         static string ConvertDecimalToBinary(int number)

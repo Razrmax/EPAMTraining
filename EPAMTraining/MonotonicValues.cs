@@ -20,33 +20,28 @@ namespace EPAMTraining
             double totalSum = 0;
             int n = 0;
             double divider = 1;                                             // divider (2n+1)! - a factorial
-            double firstElement = -1;
-            double secondElement = x;
+            int currentFact = 1;                                            // current factorial value for factorial calculation cycle base on above formula
 
-            do
+            while (true)
             {
                 if (n > 0)
                 {
-                    for (int i = 1; i < n; i++)
+                    for (; currentFact <= 2 * n + 1; currentFact++)
                     {
-                        firstElement *= firstElement;
+                        divider = divider * currentFact;
                     }
-                    for (int i = 1; i < 2 * n + 1; i++)
-                    {
-                        secondElement *= secondElement;
-                    }
-                    divider *= (2 * n + 1);
                 }
+                double term = Math.Pow(-1, n) * Math.Pow(x, 2 * n++ + 1) / divider;
 
-                double subTotal = firstElement * secondElement / divider;
-                if (Math.Abs(subTotal) < eps)
+                if (Math.Abs(term) < eps)
                 {
-                    break;
+                    totalSum += term;
                 }
-                totalSum += subTotal;
-            } while (true);
-
-            return totalSum;
+                else
+                {
+                    return totalSum;
+                }
+            }
         }
 
         static double GetNumberInput()
