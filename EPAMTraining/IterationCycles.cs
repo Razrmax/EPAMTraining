@@ -15,8 +15,9 @@ namespace EPAMTraining
 
             Console.WriteLine("Please enter the eps value (0 < eps < 0.8): ");
             double eps = GetNumberInput();
-            double equationRoot = SolveEquation(a, b, eps);
-            Console.WriteLine("Equation root: {0:N4}\nFunction: {0:N4}", equationRoot, Func(equationRoot));
+            double x = SolveEquation(a, b, eps);
+            double funcResult = Func(x);
+            Console.WriteLine("X equals: {0:N4}\nFunction: {1:N4}", x, funcResult);
             Console.ReadLine();
         }
 
@@ -56,6 +57,10 @@ namespace EPAMTraining
             while ((b - a) > eps)
             {
                 double c = (b + a) / 2;
+                if (Func(c) == 0)
+                {
+                    return Func(c);
+                }
                 if (Func(a) * Func(c) < 0)
                 {
                     b = c;
@@ -65,7 +70,8 @@ namespace EPAMTraining
                     a = c;
                 }
             }
-            return a;
+            
+            return (a + b) / 2;
         }
     }
 }

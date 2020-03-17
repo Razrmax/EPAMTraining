@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>EPAMTraining.Lab16_03_19.BinaryConverter</StartupObject>
+    <StartupObject>EPAMTraining.IterationCycles</StartupObject>
   </PropertyGroup>
 
 </Project>
