@@ -33,7 +33,7 @@ namespace EPAMTraining
                 }
                 double term = Math.Pow(-1, n) * Math.Pow(x, 2 * n++ + 1) / divider;
 
-                if (Math.Abs(term) < eps)
+                if (Math.Abs(term) > eps)
                 {
                     totalSum += term;
                 }

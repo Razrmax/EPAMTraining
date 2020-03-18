@@ -20,3 +20,13 @@ C:\Users\maxim\Desktop\Programming\EPAMTraining\EPAMTraining\obj\Debug\netcoreap
 C:\Users\maxim\Desktop\Programming\EPAMTraining\EPAMTraining\obj\Debug\netcoreapp3.1\EPAMTraining.dll
 C:\Users\maxim\Desktop\Programming\EPAMTraining\EPAMTraining\obj\Debug\netcoreapp3.1\EPAMTraining.pdb
 C:\Users\Maxim\Desktop\Programming\EPAMTraining\EPAMTraining\EPAMTraining\obj\Debug\netcoreapp3.1\EPAMTraining.csprojAssemblyReference.cache
+C:\Users\Student\Desktop\m.sulkouski\EPAMTraining\EPAMTraining\bin\Debug\netcoreapp3.1\EPAMTraining.exe
+C:\Users\Student\Desktop\m.sulkouski\EPAMTraining\EPAMTraining\bin\Debug\netcoreapp3.1\EPAMTraining.deps.json
+C:\Users\Student\Desktop\m.sulkouski\EPAMTraining\EPAMTraining\bin\Debug\netcoreapp3.1\EPAMTraining.runtimeconfig.json
+C:\Users\Student\Desktop\m.sulkouski\EPAMTraining\EPAMTraining\bin\Debug\netcoreapp3.1\EPAMTraining.runtimeconfig.dev.json
+C:\Users\Student\Desktop\m.sulkouski\EPAMTraining\EPAMTraining\bin\Debug\netcoreapp3.1\EPAMTraining.dll
+C:\Users\Student\Desktop\m.sulkouski\EPAMTraining\EPAMTraining\bin\Debug\netcoreapp3.1\EPAMTraining.pdb
+C:\Users\Student\Desktop\m.sulkouski\EPAMTraining\EPAMTraining\obj\Debug\netcoreapp3.1\EPAMTraining.AssemblyInfoInputs.cache
+C:\Users\Student\Desktop\m.sulkouski\EPAMTraining\EPAMTraining\obj\Debug\netcoreapp3.1\EPAMTraining.AssemblyInfo.cs
+C:\Users\Student\Desktop\m.sulkouski\EPAMTraining\EPAMTraining\obj\Debug\netcoreapp3.1\EPAMTraining.dll
+C:\Users\Student\Desktop\m.sulkouski\EPAMTraining\EPAMTraining\obj\Debug\netcoreapp3.1\EPAMTraining.pdb
