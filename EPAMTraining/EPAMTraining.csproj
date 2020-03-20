@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>EPAMTraining.Program</StartupObject>
+    <StartupObject>EPAMTraining.Strings</StartupObject>
   </PropertyGroup>
 
 </Project>
