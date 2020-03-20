@@ -1,18 +1,16 @@
 using System;
+using System.Text;
 
 namespace EPAMTraining
 {
     public class Strings
     {
-        static void Main()
+        static void Main(string[] args)
         {
-            string s1 = "Cat ate tak and ran taf";
-            string[] words = s1.Split(" ");
-
-            foreach(string s in words)
+            foreach(string a in args)
             {
-                System.Console.WriteLine(s);
-            }             
+                System.Console.WriteLine(a);
+            }
         }
     }
 }
