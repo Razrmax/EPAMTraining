@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <StartupObject>EPAMTraining.IterationCycles</StartupObject>
+    <StartupObject>EPAMTraining.Pluralsight.MSIL.Class</StartupObject>
   </PropertyGroup>
 
 </Project>

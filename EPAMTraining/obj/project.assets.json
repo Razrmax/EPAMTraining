@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj",
+      "projectUniqueName": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj",
       "projectName": "EPAMTraining",
-      "projectPath": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj",
+      "projectPath": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj",
       "packagesPath": "C:\\Users\\Maxim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining\\obj\\",
+      "outputPath": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -63,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

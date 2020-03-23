@@ -70,7 +70,7 @@ namespace EPAMTraining
                     a = c;
                 }
             }
-            
+
             return (a + b) / 2;
         }
     }

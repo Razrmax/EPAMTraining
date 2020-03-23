@@ -20,3 +20,7 @@ C:\Users\maxim\Desktop\Programming\EPAMTraining\EPAMTraining\obj\Debug\netcoreap
 C:\Users\maxim\Desktop\Programming\EPAMTraining\EPAMTraining\obj\Debug\netcoreapp3.1\EPAMTraining.dll
 C:\Users\maxim\Desktop\Programming\EPAMTraining\EPAMTraining\obj\Debug\netcoreapp3.1\EPAMTraining.pdb
 C:\Users\Maxim\Desktop\Programming\EPAMTraining\EPAMTraining\EPAMTraining\obj\Debug\netcoreapp3.1\EPAMTraining.csprojAssemblyReference.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\EPAMTraining\EPAMTraining\obj\Debug\netcoreapp3.1\EPAMTraining.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\EPAMTraining\EPAMTraining\obj\Debug\netcoreapp3.1\EPAMTraining.genruntimeconfig.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\EPAMTraining\obj\Debug\netcoreapp3.1\EPAMTraining.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\EPAMTraining\obj\Debug\netcoreapp3.1\EPAMTraining.genruntimeconfig.cache
