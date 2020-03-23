@@ -70,6 +70,10 @@ namespace EPAMTraining
                     a = c;
                 }
             }
+<<<<<<< HEAD:EPAMTraining/Labs/12_03_19/IterationCycles.cs
+=======
+
+>>>>>>> 3c1b9ffcd695f044f291d1e9d32eefc7abadc64d:EPAMTraining/IterationCycles.cs
             return (a + b) / 2;
         }
     }

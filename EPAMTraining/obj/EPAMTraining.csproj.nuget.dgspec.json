@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj",
         "packagesPath": "C:\\Users\\maxim\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\obj\\",
+=======
+    "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj",
+        "projectName": "EPAMTraining",
+        "projectPath": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj",
+        "packagesPath": "C:\\Users\\Maxim\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\obj\\",
+>>>>>>> 3c1b9ffcd695f044f291d1e9d32eefc7abadc64d
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

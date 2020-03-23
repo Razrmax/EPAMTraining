@@ -8,28 +8,25 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\maxim\\.nuget\\packages\\": {}
+    "C:\\Users\\maxim\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj",
-      "projectName": "EPAMTraining",
-      "projectPath": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj",
+      "projectUniqueName": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\VectorsLab\\VectorsLab\\VectorsLab.csproj",
+      "projectName": "VectorsLab",
+      "projectPath": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\VectorsLab\\VectorsLab\\VectorsLab.csproj",
       "packagesPath": "C:\\Users\\maxim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj",
-      "projectName": "EPAMTraining",
-      "projectPath": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\EPAMTraining.csproj",
-      "packagesPath": "C:\\Users\\Maxim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\EPAMTraining\\obj\\",
->>>>>>> 3c1b9ffcd695f044f291d1e9d32eefc7abadc64d
+      "outputPath": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\VectorsLab\\VectorsLab\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
         "C:\\Users\\maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
