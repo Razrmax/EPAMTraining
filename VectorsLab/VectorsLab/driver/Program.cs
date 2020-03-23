@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-
+using VectorsLab.model;
 
 namespace VectorsLab
 {
@@ -8,11 +8,13 @@ namespace VectorsLab
     {
         static void Main(string[] args)
         {
+            LinearArray linearArray = new LinearArray();
             int[] filteredValues;
             string sentence;
-            bool isContinue = true;
+            bool exit = false;
+            
 
-            while (isContinue)
+            while (!exit)
             {
                 Console.WriteLine("1) Read values from file named Inlet.in\t\t\t2) Input values from user's keyboard\nAny other key to quit");
                 string choice = Console.ReadLine();
@@ -20,6 +22,7 @@ namespace VectorsLab
                 switch (choice)
                 {
                     case "1":
+                        linearArray.
                         sentence = ReadFile();
                         filteredValues = ConvertToIntegers(sentence);
                         filteredValues = FilterIntegerValues(filteredValues);
@@ -122,11 +125,7 @@ namespace VectorsLab
             return integersArray;
         }
 
-        static private string ReadFile()
-        {
-            string contents = File.ReadAllText("Inlet.in");
-            return contents;
-        }
+        
 
         static private string GetUserInput()
         {
