@@ -1,0 +1,12 @@
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\IterationCycles\bin\Debug\netcoreapp3.1\IterationCycles.exe
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\IterationCycles\bin\Debug\netcoreapp3.1\IterationCycles.deps.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\IterationCycles\bin\Debug\netcoreapp3.1\IterationCycles.runtimeconfig.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\IterationCycles\bin\Debug\netcoreapp3.1\IterationCycles.runtimeconfig.dev.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\IterationCycles\bin\Debug\netcoreapp3.1\IterationCycles.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\IterationCycles\bin\Debug\netcoreapp3.1\IterationCycles.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\IterationCycles\obj\Debug\netcoreapp3.1\IterationCycles.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\IterationCycles\obj\Debug\netcoreapp3.1\IterationCycles.AssemblyInfoInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\IterationCycles\obj\Debug\netcoreapp3.1\IterationCycles.AssemblyInfo.cs
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\IterationCycles\obj\Debug\netcoreapp3.1\IterationCycles.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\IterationCycles\obj\Debug\netcoreapp3.1\IterationCycles.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\IterationCycles\obj\Debug\netcoreapp3.1\IterationCycles.genruntimeconfig.cache

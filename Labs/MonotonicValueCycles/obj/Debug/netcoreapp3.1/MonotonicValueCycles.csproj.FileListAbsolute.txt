@@ -1,0 +1,13 @@
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\MonotonicValueCycles\bin\Debug\netcoreapp3.1\MonotonicValueCycles.exe
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\MonotonicValueCycles\bin\Debug\netcoreapp3.1\MonotonicValueCycles.deps.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\MonotonicValueCycles\bin\Debug\netcoreapp3.1\MonotonicValueCycles.runtimeconfig.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\MonotonicValueCycles\bin\Debug\netcoreapp3.1\MonotonicValueCycles.runtimeconfig.dev.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\MonotonicValueCycles\bin\Debug\netcoreapp3.1\MonotonicValueCycles.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\MonotonicValueCycles\bin\Debug\netcoreapp3.1\MonotonicValueCycles.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\MonotonicValueCycles\obj\Debug\netcoreapp3.1\MonotonicValueCycles.csprojAssemblyReference.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\MonotonicValueCycles\obj\Debug\netcoreapp3.1\MonotonicValueCycles.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\MonotonicValueCycles\obj\Debug\netcoreapp3.1\MonotonicValueCycles.AssemblyInfoInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\MonotonicValueCycles\obj\Debug\netcoreapp3.1\MonotonicValueCycles.AssemblyInfo.cs
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\MonotonicValueCycles\obj\Debug\netcoreapp3.1\MonotonicValueCycles.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\MonotonicValueCycles\obj\Debug\netcoreapp3.1\MonotonicValueCycles.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\MonotonicValueCycles\obj\Debug\netcoreapp3.1\MonotonicValueCycles.genruntimeconfig.cache

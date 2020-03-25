@@ -1,0 +1,13 @@
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\ArithmeticCycles\bin\Debug\netcoreapp3.1\ArithmeticCycles.exe
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\ArithmeticCycles\bin\Debug\netcoreapp3.1\ArithmeticCycles.deps.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\ArithmeticCycles\bin\Debug\netcoreapp3.1\ArithmeticCycles.runtimeconfig.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\ArithmeticCycles\bin\Debug\netcoreapp3.1\ArithmeticCycles.runtimeconfig.dev.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\ArithmeticCycles\bin\Debug\netcoreapp3.1\ArithmeticCycles.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\ArithmeticCycles\bin\Debug\netcoreapp3.1\ArithmeticCycles.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\ArithmeticCycles\obj\Debug\netcoreapp3.1\ArithmeticCycles.csprojAssemblyReference.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\ArithmeticCycles\obj\Debug\netcoreapp3.1\ArithmeticCycles.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\ArithmeticCycles\obj\Debug\netcoreapp3.1\ArithmeticCycles.AssemblyInfoInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\ArithmeticCycles\obj\Debug\netcoreapp3.1\ArithmeticCycles.AssemblyInfo.cs
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\ArithmeticCycles\obj\Debug\netcoreapp3.1\ArithmeticCycles.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\ArithmeticCycles\obj\Debug\netcoreapp3.1\ArithmeticCycles.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\ArithmeticCycles\obj\Debug\netcoreapp3.1\ArithmeticCycles.genruntimeconfig.cache

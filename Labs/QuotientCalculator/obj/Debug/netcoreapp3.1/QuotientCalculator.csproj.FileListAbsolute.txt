@@ -1,0 +1,13 @@
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\QuotientCalculator\bin\Debug\netcoreapp3.1\QuotientCalculator.exe
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\QuotientCalculator\bin\Debug\netcoreapp3.1\QuotientCalculator.deps.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\QuotientCalculator\bin\Debug\netcoreapp3.1\QuotientCalculator.runtimeconfig.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\QuotientCalculator\bin\Debug\netcoreapp3.1\QuotientCalculator.runtimeconfig.dev.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\QuotientCalculator\bin\Debug\netcoreapp3.1\QuotientCalculator.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\QuotientCalculator\bin\Debug\netcoreapp3.1\QuotientCalculator.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\QuotientCalculator\obj\Debug\netcoreapp3.1\QuotientCalculator.csprojAssemblyReference.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\QuotientCalculator\obj\Debug\netcoreapp3.1\QuotientCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\QuotientCalculator\obj\Debug\netcoreapp3.1\QuotientCalculator.AssemblyInfoInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\QuotientCalculator\obj\Debug\netcoreapp3.1\QuotientCalculator.AssemblyInfo.cs
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\QuotientCalculator\obj\Debug\netcoreapp3.1\QuotientCalculator.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\QuotientCalculator\obj\Debug\netcoreapp3.1\QuotientCalculator.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\QuotientCalculator\obj\Debug\netcoreapp3.1\QuotientCalculator.genruntimeconfig.cache
