@@ -35,13 +35,15 @@ namespace VectorsLab.driver
                         break;
                     case "3":
                         str = linearArray.GetKeyboardInput();
-                        StoreInputValues(inputFilePath, ref str, linearArray);
-                        ProcessAndSave(inputFilePath,str,linearArray);
+                        linearArray.WriteFile(inputFilePath, str);
+                        str = linearArray.ReadFile(inputFilePath);
+                        str = linearArray.FilterIntegerValues(str);
+                        linearArray.WriteFile(outputFilePath, str);
                         break;
                     case "4":
                         linearArray.GenerateRandomValues(str);
                         StoreInputValues(inputFilePath, ref str, linearArray);
-                        ProcessAndSave(outputFilePath,str,linearArray);
+                        ProcessAndSave(inputFilePath,str,linearArray);
                         break;
                     default:
                         exit = true;
@@ -52,7 +54,7 @@ namespace VectorsLab.driver
 
         static void DisplayMainMenu()
         {
-            Console.WriteLine("Main menu");
+            Console.WriteLine("Vectors Lab");
             Console.WriteLine("1) Display contents of Outlet.in\n2) Display contents of Inlet.in\n3) Edit Inlet.in manually\n4) Auto generate Inlet.in");
             Console.WriteLine("Any other key to quit");
         }
@@ -71,8 +73,7 @@ namespace VectorsLab.driver
 
         static void ProcessAndSave(string filePath, string str, LinearArray linearArray)
         {
-            linearArray.FilterIntegerValues(str);
-            linearArray.WriteFile(filePath, str);
+            
         }
     }
 }

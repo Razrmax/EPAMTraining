@@ -3,16 +3,27 @@ using System.IO;
 
 namespace DividerIndex.model
 {
-    abstract class AbstractWordArray : IDataProcessor
+    abstract class AbstractNumbersArray : IDataProcessor
     {
         //Reads specified string file, checks values and returns 1) string or 2) "" if file does not exist or contains illegal values.
-        public string ReadFile(string filePath)
+        public string ReadFile(string filePath, out int n, out int divider)
         {
             string str = "";
+            n = 0;
+            divider = 0;
             try
             {
                 str = File.ReadAllText(filePath);
-                string[] sentences = str.Split('\n');
+                string[] values = str.Split('\n');
+                if (values.Length >= 3)
+                {
+                    n = Convert.ToInt32(values[0]);
+                    divider = Convert.ToInt32(values[1]);
+                    string[] temp = values;
+                    values = new string[temp.Length - 2];
+                    Array.Copy(temp, 2, values, 0, values.Length);
+                    str = String.Join("\n", values);
+                }
             }
             catch (Exception e)
             {
@@ -69,21 +80,45 @@ namespace DividerIndex.model
             return true;
         }
         //Gets a string from user which contains n and c delimited by space.
-        public void GetKeyboardInput(out int n, out int dividend)
+        public string GetKeyboardInput()
         {
             bool exit = false;
             Console.WriteLine("Please enter n and C values delimited by space and press (\"Enter\"):");
             string input = "";
+            string str;
+            string[] values;
 
             while (!exit)
             {
-
-                string s = Console.ReadLine();
-                
-                
+                input = "";
+                input = Console.ReadLine();
+                values = input.Split(" ");
+                if (values.Length == 2)
+                {
+                    foreach (string s in values)
+                    { 
+                        if (System.Text.RegularExpressions.Regex.IsMatch(s, @"\d")
+                            inp
+                    }
+                }
             }
 
             return input.Trim();
+        }
+
+        private bool IsNumber(string number)
+        {
+            try
+            {
+                int i = Convert.ToInt32(number);
+            }
+            catch (Exception e)
+            {
+                if (e is FormatException || e is OverflowException)
+                return false;
+            }
+
+            return true;
         }
         //Generates reandom values (0 to 40) for int[1...n] and returns as string
         public string GenerateRandomValues(int n)

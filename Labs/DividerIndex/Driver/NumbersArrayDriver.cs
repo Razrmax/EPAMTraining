@@ -3,18 +3,19 @@ using System.IO;
 using System.Linq;
 using DividerIndex.model;
 
+
 namespace DividerIndex
 {
-    class Program
+    class NumbersArrayDriver
     {
         static void Main()
         {
             string inputFilePath = @"C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DividerIndex\src\Inlet.in";
             string outputFilePath = @"C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DividerIndex\src\Outlet.in";
-            WordsArray wordsArray = new WordsArray();
-            string str = wordsArray.ReadFile(inputFilePath);
-            str = wordsArray.FilterWords(str);
-            wordsArray.WriteFile(outputFilePath, str);
+            NumbersArray numArray = new NumbersArray();
+            string str = numArray.ReadFile(inputFilePath,out int n, out int divider);
+            str = numArray.FindDividers(str);
+            numArray.WriteFile(outputFilePath, str);
             bool exit = false;
 
             while (!exit)
@@ -25,20 +26,20 @@ namespace DividerIndex
                 switch (choice)
                 {
                     case "1":
-                        str = wordsArray.ReadFile(outputFilePath);
+                        str = numArray.ReadFile(outputFilePath);
                         DisplayResult(str);
                         break;
 
                     case "2":
-                        str = wordsArray.ReadFile(inputFilePath);
+                        str = numArray.ReadFile(inputFilePath);
                         DisplayResult(str);
                         break;
 
                     case "3":
-                        str = wordsArray.GetKeyboardInput();
-                        wordsArray.WriteFile(inputFilePath, str);
-                        str = wordsArray.FilterWords(str);
-                        wordsArray.WriteFile(outputFilePath, str);
+                        str = numArray.GetKeyboardInput();
+                        numArray.WriteFile(inputFilePath, str);
+                        str = numArray.FilterWords(str);
+                        numArray.WriteFile(outputFilePath, str);
                         break;
 
                     default:

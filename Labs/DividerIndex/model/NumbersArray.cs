@@ -4,7 +4,7 @@ using DividerIndex.model;
 
 namespace DividerIndex.model
 {
-    class NumbersArray : AbstractWordArray
+    class NumbersArray : AbstractNumbersArray
     {
         //Filter words from the input file. Return filtered value, "" if input was invalid.
         public override string FindDividers(string str, int dividend)
@@ -12,14 +12,14 @@ namespace DividerIndex.model
             try
             {
                 int[] values = Array.ConvertAll(str.Trim().Split(" "), int.Parse);
-                if (values.Length < 2)
+                if (values.Length < 3)
                 {
                     str = "";
                 }
                 else
                 {
                     str = "";
-                    for (int i = 0; i < values.Length; i++)
+                    for (int i = 2; i < values.Length; i++)
                     {
                         if (IsDivider(dividend, i))
                         {
