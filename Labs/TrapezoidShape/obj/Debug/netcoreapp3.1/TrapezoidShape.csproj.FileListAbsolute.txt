@@ -1,0 +1,13 @@
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\TrapezoidShape\bin\Debug\netcoreapp3.1\TrapezoidShape.exe
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\TrapezoidShape\bin\Debug\netcoreapp3.1\TrapezoidShape.deps.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\TrapezoidShape\bin\Debug\netcoreapp3.1\TrapezoidShape.runtimeconfig.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\TrapezoidShape\bin\Debug\netcoreapp3.1\TrapezoidShape.runtimeconfig.dev.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\TrapezoidShape\bin\Debug\netcoreapp3.1\TrapezoidShape.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\TrapezoidShape\bin\Debug\netcoreapp3.1\TrapezoidShape.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\TrapezoidShape\obj\Debug\netcoreapp3.1\TrapezoidShape.csprojAssemblyReference.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\TrapezoidShape\obj\Debug\netcoreapp3.1\TrapezoidShape.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\TrapezoidShape\obj\Debug\netcoreapp3.1\TrapezoidShape.AssemblyInfoInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\TrapezoidShape\obj\Debug\netcoreapp3.1\TrapezoidShape.AssemblyInfo.cs
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\TrapezoidShape\obj\Debug\netcoreapp3.1\TrapezoidShape.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\TrapezoidShape\obj\Debug\netcoreapp3.1\TrapezoidShape.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\TrapezoidShape\obj\Debug\netcoreapp3.1\TrapezoidShape.genruntimeconfig.cache

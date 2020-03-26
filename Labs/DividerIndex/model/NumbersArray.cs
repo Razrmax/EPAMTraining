@@ -1,55 +1,46 @@
 ﻿using System;
-using System.IO;
-using DividerIndex.model;
+using System.Collections.Generic;
 
 namespace DividerIndex.model
 {
-    class NumbersArray : AbstractNumbersArray
+    /// <summary>
+    /// Stores N (as elementsNumber), C (as dividend), and int array of dividers. Calculates and reof a Dividend by their indices.
+    /// </summary>
+    class NumbersArray
     {
-        //Filter words from the input file. Return filtered value, "" if input was invalid.
-        public override string FindDividers(string str, int dividend)
+        public int ElementsNumber { get; }
+        public int Dividend { get; }
+        public int[] RawValues { get; }
+        public NumbersArray(int elementsNumber, int dividend, int[] rawValues)
         {
+            ElementsNumber = elementsNumber;
+            Dividend = dividend;
+            RawValues = rawValues;
+        }
+        /// <summary>
+        /// Takes the string of numeric values (Rawvalues) and stores all the elements whose indices can be the dividers for the Dividend. Returns dividers as a string.
+        /// </summary>
+        /// <returns></returns>
+        public string GetDividers()
+        {
+            List<int> dividers = new List<int>();
             try
             {
-                int[] values = Array.ConvertAll(str.Trim().Split(" "), int.Parse);
-                if (values.Length < 3)
+                for (int i = 1; i < RawValues.Length; i++)
                 {
-                    str = "";
-                }
-                else
-                {
-                    str = "";
-                    for (int i = 2; i < values.Length; i++)
+                    if (Dividend % i == 0)
                     {
-                        if (IsDivider(dividend, i))
-                        {
-                            str += values[i] + " ";
-                        }
+                        dividers.Add(RawValues[i]);
                     }
                 }
             }
             catch (FormatException)
             {
                 Console.WriteLine("Values file empty");
-                str = "";
+                return "";
             }
 
-            return str;
-        }
-        //Check that the string value is valid, i.e. contains at less two different literal values
-        private bool IsDivider (int dividend, int divisor)
-        {
-            try
-            {
-                if (dividend % divisor == 0)
-                {
-                    return true;
-                }
-            }
-            catch (DivideByZeroException)
-            {
-            }
-            return false;
+            return string.Join("\n", dividers);
         }
     }
 }

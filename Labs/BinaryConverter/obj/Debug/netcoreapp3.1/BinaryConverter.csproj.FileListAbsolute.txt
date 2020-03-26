@@ -10,3 +10,16 @@ C:\Users\Maxim\Desktop\Programming\EPAMTraining\BinaryConverter\obj\Debug\netcor
 C:\Users\Maxim\Desktop\Programming\EPAMTraining\BinaryConverter\obj\Debug\netcoreapp3.1\BinaryConverter.dll
 C:\Users\Maxim\Desktop\Programming\EPAMTraining\BinaryConverter\obj\Debug\netcoreapp3.1\BinaryConverter.pdb
 C:\Users\Maxim\Desktop\Programming\EPAMTraining\BinaryConverter\obj\Debug\netcoreapp3.1\BinaryConverter.genruntimeconfig.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\BinaryConverter\bin\Debug\netcoreapp3.1\BinaryConverter.exe
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\BinaryConverter\bin\Debug\netcoreapp3.1\BinaryConverter.deps.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\BinaryConverter\bin\Debug\netcoreapp3.1\BinaryConverter.runtimeconfig.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\BinaryConverter\bin\Debug\netcoreapp3.1\BinaryConverter.runtimeconfig.dev.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\BinaryConverter\bin\Debug\netcoreapp3.1\BinaryConverter.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\BinaryConverter\bin\Debug\netcoreapp3.1\BinaryConverter.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\BinaryConverter\obj\Debug\netcoreapp3.1\BinaryConverter.csprojAssemblyReference.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\BinaryConverter\obj\Debug\netcoreapp3.1\BinaryConverter.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\BinaryConverter\obj\Debug\netcoreapp3.1\BinaryConverter.AssemblyInfoInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\BinaryConverter\obj\Debug\netcoreapp3.1\BinaryConverter.AssemblyInfo.cs
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\BinaryConverter\obj\Debug\netcoreapp3.1\BinaryConverter.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\BinaryConverter\obj\Debug\netcoreapp3.1\BinaryConverter.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\BinaryConverter\obj\Debug\netcoreapp3.1\BinaryConverter.genruntimeconfig.cache

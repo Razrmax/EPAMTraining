@@ -1,5 +1,5 @@
-﻿using System;
-using StringsLab.model;
+﻿using StringsLab.model;
+using System;
 
 namespace StringsLab
 {

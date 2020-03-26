@@ -1,12 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TrapezoidShape.model
 {
-    class Trapezoid : ISidesCalculator
+    /// <summary>
+    /// Trapezoid shape class, stores 
+    /// </summary>
+    class Trapezoid  
     {
-        private int[] sides = new int[4];
+        public int[] Sides { get; }
         public int Perimeter { get; set; }
         public int Area { get; set; }
 

@@ -96,7 +96,7 @@ namespace VectorsLab.model
             return true;
         }
 
-        public abstract string FilterIntegerValues(string str);
-        public abstract void GenerateRandomValues(string str);
+        public abstract string CopyBetweenMinMaxValues(string str);
+        public abstract string GenerateRandomValues(string str);
     }
 }

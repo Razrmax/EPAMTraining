@@ -1,82 +1,129 @@
 ﻿using System;
+using System.Linq;
 
 namespace VectorsLab.model
 {
     class LinearArray : AbstractLinearArray
     {
-        public override void GenerateRandomValues(string str)
+        public override string GenerateRandomValues(string str)
         {
             Random rand = new Random();
-            int length = (rand.Next(10, 20));
+            int length = 5;
             str = "";
 
             for (int i = 0; i < length; i++)
             {
-                int randomValue = rand.Next(-100, 100);
+                int randomValue = rand.Next(0, 5);
                 str += randomValue + " ";
             }
 
-            str.Trim();
+            return str.Trim();
         }
-
-        //Filter integer values from the input array. Save to Outlet.out
-        public override string FilterIntegerValues(string str)
+        //Copy integer values from the array to the string as follows:
+        //1) Copy from the array all the values whose indices are located in between the marginal MIN and MAX values of the array
+        //2) If there are more then 2 min values in the array, copy all values in between the marginal leftmost and rightmost MIN values excluding MAX value.
+        //3) Return a string representation of resulting values with \n between them
+        public override string CopyBetweenMinMaxValues(string str)
         {
             try
             {
                 int[] values = Array.ConvertAll(str.Trim().Split(" "), int.Parse);
-                if (values.Length < 2)
+                str = "";
+                if (values.Length < 3)
                 {
-                    str = "-1";
+                    str = "Not enough arguments. At less 3 distinct integers needed.";
                 }
                 else
                 {
-                    int smallest = values[0], greatest = smallest;
-
-                    foreach (int n in values)
-                    {
-                        if (smallest > n)
-                        {
-                            smallest = n;
-                        }
-                        if (greatest < n)
-                        {
-                            greatest = n;
-                        }
-                    }
-
-                    if (smallest == greatest)                           //Only one value in array 
+                    int minValue = values.Min();
+                    int maxValue = values.Max();
+                    if (minValue == maxValue)
                     {
                         str = "-1";
                     }
-
                     else
                     {
-                        str = "";
-                        foreach (int n in values)
+                        int minLeftIndex = Array.IndexOf(values, minValue);
+                        int maxLeftIndex = Array.IndexOf(values, maxValue);
+                        int minRightIndex = Array.LastIndexOf(values, minValue);
+                        int maxRightIndex = Array.LastIndexOf(values, maxValue);
+                        int leftIndex = 0;
+                        int rightIndex = 0;
+                        int middleIndex = 0;
+
+                        if (minLeftIndex < maxLeftIndex)
                         {
-                            if (n > smallest && n < greatest)
+                            leftIndex = minLeftIndex;
+                            if (minRightIndex > maxRightIndex)
                             {
-                                str = str + n + "\n";
+                                rightIndex = minRightIndex;
+                            }
+                            else
+                            {
+                                rightIndex = maxRightIndex;
+                            }
+                        }
+                        else
+                        {
+                            leftIndex = maxLeftIndex;
+                            rightIndex = minRightIndex;
+                        }
+
+                        //int rightIndex = Array.LastIndexOf(values, minValue);
+                        //int leftIndex = Array.IndexOf(values,minValue);
+                        //int maxValueIndex = Array.LastIndexOf(values, maxValue);
+
+
+                        //if(maxValueIndex < leftIndex)
+                        //{
+                        //    leftIndex = Array.IndexOf(values, maxValue);
+                        //    maxValueIndex = rightIndex;
+                        //}
+                        //else if (maxValueIndex > rightIndex)
+                        //{
+                        //    rightIndex = maxValueIndex;
+                        //}
+
+                        leftIndex++;
+
+                        for (int i = leftIndex; i < rightIndex; i++)
+                        {
+                            if (i == rightIndex - 1)
+                            {
+                                str += values[i];
+                            }
+                            else
+                            {
+                                str += values[i] + "\n";
                             }
                         }
 
-                        if (str == "")                                  //No values between min and max value
+                        if (str == "")
                         {
                             str = "-1";
                         }
                     }
-
-
                 }
             }
             catch (FormatException)
             {
-                Console.WriteLine("Values file empty");
-                str = "";
+                str = "No valid values found in file";
             }
 
             return str;
+        }
+        //True if the array contains duplicate values, false otherwise
+        private bool ContainsDuplicates(int[] values, int key)
+        {
+            int counter = 0;
+            foreach (int i in values)
+            {
+                if (i == key)
+                {
+                    counter++;
+                }
+            }
+            return counter >= 2;
         }
     }
 }

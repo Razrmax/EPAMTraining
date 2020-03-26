@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace TrapezoidShape.model
+﻿namespace TrapezoidShape.model
 {
     interface ISidesCalculator
     {

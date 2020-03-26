@@ -1,0 +1,13 @@
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DividerIndex\obj\Debug\netcoreapp3.1\DividerIndex.csprojAssemblyReference.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DividerIndex\obj\Debug\netcoreapp3.1\DividerIndex.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DividerIndex\obj\Debug\netcoreapp3.1\DividerIndex.AssemblyInfoInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DividerIndex\obj\Debug\netcoreapp3.1\DividerIndex.AssemblyInfo.cs
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DividerIndex\bin\Debug\netcoreapp3.1\DividerIndex.exe
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DividerIndex\bin\Debug\netcoreapp3.1\DividerIndex.deps.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DividerIndex\bin\Debug\netcoreapp3.1\DividerIndex.runtimeconfig.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DividerIndex\bin\Debug\netcoreapp3.1\DividerIndex.runtimeconfig.dev.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DividerIndex\bin\Debug\netcoreapp3.1\DividerIndex.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DividerIndex\bin\Debug\netcoreapp3.1\DividerIndex.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DividerIndex\obj\Debug\netcoreapp3.1\DividerIndex.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DividerIndex\obj\Debug\netcoreapp3.1\DividerIndex.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DividerIndex\obj\Debug\netcoreapp3.1\DividerIndex.genruntimeconfig.cache
