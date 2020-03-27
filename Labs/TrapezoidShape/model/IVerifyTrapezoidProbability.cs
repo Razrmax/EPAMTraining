@@ -9,7 +9,7 @@ namespace TrapezoidShape.model
     /// </summary>
     interface IVerifyTrapezoidProbability
     {
-        bool VerifyTrapezoidProbability(int a, int b, int c, int d);
-        void ModelLastTrapezoidSide(int a, int b, int c, out int d);
+        bool VerifyTrapezoidProbability();
+        void ModelLastTrapezoidSide(out double d);
     }
 }
