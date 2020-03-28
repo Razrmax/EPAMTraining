@@ -3,64 +3,54 @@
 namespace TrapezoidShape.model
 {
     /// <summary>
-    /// Trapezoid shape class, stores 
+    /// Trapezoid shape class, stores values of a trapezoid sides a,b,c,d, and height h as readonly properties
+    /// Calculates area and perimeter
     /// </summary>
+    //       ____b______
+    //      /|          |\ 
+    //    c/ |h         | \d
+    //    /__|__a_______|__\
     class Trapezoid 
     {
         public double ASide { get; }
         public double BSide { get; }
         public double CSide { get; }
         public double DSide { get; }
-        public double Perimeter { get; set;  }
-        public double Area { get; set; }
-        public double Height { get; }
-        public string TrapezoidType { get; }
+        public double Perimeter { get; }
+        public double Area { get; }
+        public double H { get; }
 
         /// <summary>
-        /// 4 values constructor. Gets 4 valid values of a,b,c,d, calculates if it is a Right or Isosceles trapezoid, and calculates all parameters
+        /// 5 input values constructor. Gets a,b,c,d, and h, and calculates Perimeter and Area
         /// </summary>
         /// <param name="a">bottom base length</param>
         /// <param name="b">top base length</param>
         /// <param name="c">left lateral side</param>
         /// <param name="d">right lateral side</param>
-        /// <param name="trapezoidType">trapezoid type, can be of two types: "Right" (left side perpendicular to bases), and "Isosceles" (both left and right sides of equal height)</param>
-        public Trapezoid(double a, double b, double c, double d)
+        public Trapezoid(double a, double b, double c, double d, double h)
         {
             ASide = a;
             BSide = b;
             CSide = c;
             DSide = d;
-
-            if (c == d)
-            {
-                TrapezoidType = "Isosceles";
-                Triangle triangle = new Triangle(Math.Abs(a - b) / 2, c, true);
-                Height = triangle.FindThirdSide();
-            }
-            else
-            {
-                TrapezoidType = "Right";
-                Triangle triangle = new Triangle(Math.Abs(a - b), c, false);
-                Height = triangle.FindThirdSide();
-            }
-
-            CalcArea();
-            CalcPerimeter();
+            H = h;
+            
+            Area = CalcArea();
+            Perimeter = CalcPerimeter();
         }
         /// <summary>
-        /// Calculates area of a trapezoid based on the formula: A = h * ((a + b) / 2).
+        /// Calculates area of a trapezoid: A = h * ((a + b) / 2).
         /// </summary>
-        private void CalcArea()
+        private double CalcArea()
         {
-            Area = Height * ((ASide + BSide) / 2);
+            return H * ((ASide + BSide) / 2);
         }
         /// <summary>
         /// Calculates perimeter of a trapezoid (a + b + c + d).
         /// </summary>
-        private void CalcPerimeter()
+        private double CalcPerimeter()
         {
-            Perimeter = ASide + BSide + CSide + DSide;
+            return ASide + BSide + CSide + DSide;
         }
-
     }
 }

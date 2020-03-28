@@ -7,53 +7,48 @@ namespace TrapezoidShape.model
         public double ASide { get; }
         public double BSide { get; }
         public double CSide { get; }
+        public bool IsRightTriangle { get; }                    //States if the triangle is right or not. If one of its sides is <= 0, than it cannot be a right triangle
+
         /// <summary>
-        /// Sets two known sides of a triangle, if hypo is true, than a and c are initiated, if false, than a and b are initiated
+        /// Sets two known sides of a triangle. Value a is always a known leg (a or b). c means a Hypotenuse if isHypoKnown is true, otherwise leg a or b
+        ///             /|
+        ///           c/ |a 
+        ///           /_b|
         /// </summary>
         /// <param name="a">always a leg</param>
-        /// <param name="b">leg if hypoKnown is false, hypotenuse otherwise</param>
-        /// <param name="hypoKnown">true if hypotenuse is known, false otherwise</param>
-        public Triangle(double a, double b, bool hypoKnown)
+        /// <param name="b">leg if isHypoKnown is false, hypotenuse otherwise</param>
+        /// <param name="isHypoKnown">true if hypotenuse is known, false otherwise</param>
+        public Triangle(double a, double b, bool isHypoKnown)
         {
-            if (hypoKnown)
+            ASide = a;
+            if (isHypoKnown)
             {
-                ASide = a;
                 CSide = b;
-                BSide = FindThirdSide();
+                BSide = CalcTriangleLeg();
             }
             else
             {
-                ASide = a;
                 BSide = b;
-                CSide = FindThirdSide();
+                CSide = CalcTriangleHypo();
             }
+
+            IsRightTriangle = (BSide > 0);
         }
         /// <summary>
-        /// Finds the third  unknown side of a Triangle based on Pythagoras theorem
-        /// </summary>
-        /// <returns>int third side</returns>
-        public double FindThirdSide()
-        {
-            return CSide == 0 ? CalcTriangleHypo() : CalcTriangleLeg();
-        }
-        /// <summary>
-        ///                                                                        _____________
         /// Finds the unknown leg of a triangle based on Pythagoras theorem  x = (V(c^2 - b^2))
         /// </summary>
-        /// <returns>int leg</returns>
+        /// <returns>double leg</returns>
         private double CalcTriangleLeg()
         {
-            double knownLeg = BSide == 0 ? BSide : ASide;
-            return Math.Round(Math.Sqrt(Math.Pow(CSide, 2) - Math.Pow(knownLeg, 2)),1);
+            return Math.Round(Math.Sqrt(Math.Pow(CSide, 2) - Math.Pow(ASide, 2)),1,MidpointRounding.AwayFromZero);
         }
         /// <summary>
-        ///                                                                       ____________  
         /// Finds the hypotenuse of a triangle based on Pythagoras theorem  x = (V(a^2 + b^2))
         /// </summary>
-        /// <returns>int hypotenuse</returns>
+        /// <returns>double hypotenuse</returns>
         private double CalcTriangleHypo()
         {
-            return Math.Round(Math.Sqrt(Math.Pow(ASide, 2) + Math.Pow(BSide, 2)),1);
+            return Math.Round(Math.Sqrt(Math.Pow(ASide, 2) + Math.Pow(BSide, 2)),1,MidpointRounding.AwayFromZero);
         }
     }
 }

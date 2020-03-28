@@ -6,15 +6,14 @@ Important (!):
 • The geometric shape should not display anything on the screen or read anything from the screen. 
 • After creating a shape, you cannot change its linear dimensions.
 • There should not be any default constructor since a figure with zero linear dimensions cannot exist. We do not want to create an object in a deliberately erroneous state.
-• The comments of the calculation methods should contain a description of the formulas used to calculate them, or the names of such formulas. 
-• There must be “prompts for input”, and the display of the result, so that the user understands what is displayed.
+• The comments of the calculation methods should contain a description of the formulas used for calculations, or the names of such formulas. 
+• The application prompts user input, and displays the result, so that the user understands what is displayed.
  */
 
 using System;
-using System.IO.MemoryMappedFiles;
 using TrapezoidShape.model;
 
-namespace TrapezoidShape
+namespace TrapezoidShape.driver
 {
     /// <summary>
     /// Driver class for Trapezoid application
@@ -24,70 +23,40 @@ namespace TrapezoidShape
         static void Main()
         {
             bool exit = false;
-            string input;
-            TrapezoidDesigner trapezoidDesigner;
+            
             Trapezoid trapezoid = null;
 
             while (!exit)
             {
                 DisplayMainMenu();
-                input = Console.ReadLine();
+                string input = Console.ReadLine().ToLower();
 
                 switch (input)
                 {
                     case "1":
-                        DisplayNewTrapezoidMenu();
-                        while (true)
+                        GetUserTrapezoidSides(out double a, out double b, out double c, out double d, out double h);
+                        if (IsValidTrapezoid(a,b,c,d,h))
                         {
-                            input = Console.ReadLine();
-                            if (input == "1")
-                            {
-                                GetUserTrapezoidSides(out double a, out double b, out double c,out double d, 4);
-                                trapezoidDesigner = new TrapezoidDesigner(a,b,c,d);
-
-                                if (trapezoidDesigner.VerifyTrapezoidProbability() == true)
-                                {
-                                    trapezoid = new Trapezoid(a,b,c,d);
-                                }
-                                else
-                                {
-                                    Console.WriteLine("Trapezoid with stated values cannot exist. Should I try and compute the fourth side? (y/n)");
-                                    input = Console.ReadLine().ToLower();
-                                    if (input == "y")
-                                    {
-                                        trapezoidDesigner.ModelLastTrapezoidSide(out d);
-                                        Console.WriteLine("Computed d side: {0}", d);
-                                    }
-                                }
-                            }
-                            else if (input == "2")
-                            {
-                                AutoGenerateThreeTrapezoidSides(out double a, out double b, out double c);
-                                trapezoidDesigner = new TrapezoidDesigner(a,b,c);
-                                double d = trapezoidDesigner.DSide;
-                                trapezoid = new Trapezoid(a,b,c,d);
-                            }
-                            else if (input == "3")
-                            {
-                                if (trapezoid != null)
-                                {
-                                    DisplayTrapezoidValues( trapezoid);
-                                }
-                            }
-                            else
-                            {
-                                break;
-                            }
+                            Console.WriteLine("Trapezoid can exist.");
+                            trapezoid = new Trapezoid(a, b, c, d, h);
                         }
-
+                        else
+                        {
+                            Console.WriteLine("Trapezoid with stated values cannot exist.");
+                        }
                         break;
                     case "2":
                         if (trapezoid != null)
                         {
                             DisplayTrapezoidValues(trapezoid);
                         }
+                        else
+                        {
+                            Console.WriteLine("Trapezoid has not been stored.");
+                        }
                         break;
-                    case "quit":
+                    case "q":
+                        exit = true;
                         break;
                 }
             }
@@ -97,35 +66,31 @@ namespace TrapezoidShape
         static void DisplayMainMenu()
         {
             Console.WriteLine("Main menu.");
-            Console.WriteLine("1) Create a new Trapezoid\n2)Display values of the Trapezoid\nType 'Quit' to exit");
+            Console.WriteLine("1) Create a new Trapezoid\n2) Display values of the Trapezoid\n'Q' to exit");
         }
 
-        static void DisplayNewTrapezoidMenu()
+        static void GetUserTrapezoidSides(out double a, out double b, out double c, out double d, out double h)
         {
-            Console.WriteLine("1) Enter all sides of a triangle manually\n2) Auto-generate all four sides of a probable Trapezoid\n3) Display current trapezoid values\nDefault - previous menu");
-        }
-
-        static void GetUserTrapezoidSides(out double a, out double b, out double c, out double d, int length)
-        {
-            int input;
-            int[] userValues = new int[length];
-            Console.WriteLine("Enter each of the four sides (a,b,c,d) of a trapezoid. Minimum value is 1, maximum value is 8. Sides a and b cannot be of equal length: ");
-            for (int i = 0; i < length; i++)
+            double[] userValues = new Double[5];
+            Console.WriteLine(@"     ____b______"); 
+            Console.WriteLine(@"    /|          |\");
+            Console.WriteLine(@"  c/ |h         | \d");
+            Console.WriteLine(@"  /__|__a_______|__\");
+            Console.WriteLine("Please Enter each of the four sides (a,b,c,d) of a trapezoid as illustrated above (from 1 to 8), and a h h: ");
+            
+            for (int i = 0; i < userValues.Length; i++)
             {
                 try
                 {
-                    input = Convert.ToInt32(Console.ReadLine());
+                    double input = Convert.ToDouble(Console.ReadLine());
                     if (input < 1 || input > 8)
                     {
                         Console.WriteLine("Wrong value, try again");
                         i--;
                         continue;
                     }
-                    userValues[i] = input;
-                    if (i == 1 && (userValues[0] == userValues[1]))
-                    {
-                        Console.WriteLine("a cannot be equal to b, try new value");
-                    }
+
+                    userValues[i] = Math.Round(input,1,MidpointRounding.AwayFromZero);
                 }
                 catch (Exception)
                 {
@@ -137,35 +102,9 @@ namespace TrapezoidShape
             a = userValues[0];
             b = userValues[1];
             c = userValues[2];
-            if (length == 4)
-            {
-                d = userValues[3];
-            }
-            else
-            {
-                d = 0;
-            }
+            d = userValues[3];
+            h = userValues[4];
         }
-
-        static void AutoGenerateThreeTrapezoidSides(out double a, out double b, out double c)
-        {
-            Random rand = new Random();
-            int[] userValues = new int[3];
-            for (int i = 0; i < 3; i++)
-            {
-                userValues[i] = rand.Next(1, 8);
-            }
-
-            a = userValues[0];
-            b = userValues[1];
-            c = userValues[2];
-
-            while (b == a)
-            {
-                b = rand.Next(1, 8);
-            }
-        }
-
         static void DisplayTrapezoidValues(Trapezoid trapezoid)
         {
             Console.WriteLine("Dimensions of trapezoid");
@@ -173,8 +112,42 @@ namespace TrapezoidShape
             Console.WriteLine("b: {0}", trapezoid.BSide);
             Console.WriteLine("c: {0}", trapezoid.CSide);
             Console.WriteLine("d: {0}", trapezoid.DSide);
-            Console.WriteLine("Area: {0:1N}", trapezoid.Area);
-            Console.WriteLine("Perimeter: {0:1N}", trapezoid.Perimeter);
+            Console.WriteLine("Area: {0:N1}", trapezoid.Area);
+            Console.WriteLine("Perimeter: {0:N1}", trapezoid.Perimeter);
+        }
+
+        /// <summary>
+        /// Calculates the trapezoid's last side (x). a, b, c, and d are sides of a probable Trapezoid as illustrated below. h is its h.
+        /// Creates two triangles. Than using triangles finds the unknown leg l1 of the first triangle. Than finds the leg of a 2nd triangle (l2).
+        /// After the 2nd triangle's 2 sides are known (h and l2), calculates its third side (or d) using the Pythagoras theorem: d = V(h^2 + l2^2).
+        /// Returns true if resulting value equals d, false otherwise.
+        /// </summary>
+        /// <param name="a">bigger base side a</param>
+        /// <param name="b">smaller base side b</param>
+        /// <param name="c">lateral side c</param>
+        /// <param name="d">lateral side d</param>
+        /// <param name="h">height h</param>
+        /// <returns>true if shape is a valid Trapezoid, false if otherwise</returns>
+        //       ____b______
+        //      /|          |\ 
+        //    c/ |h         | \d(x)
+        //    /l1|__a_______|l2\
+        static bool IsValidTrapezoid(double a, double b, double c, double d, double h)
+        {
+            //if (a == b || (c == h || d == h))
+            //{
+            //    return false;
+            //}
+            Triangle triangle = new Triangle(h,c,true);
+            double l1 = triangle.BSide;
+            double l2 = a - b - l1;
+            Triangle triangle2 = new Triangle(l2,h,false);
+            if (!triangle2.IsRightTriangle)
+            {
+                return false;
+            }
+            double x = triangle2.CSide;
+            return x == d;
         }
     }
 }
