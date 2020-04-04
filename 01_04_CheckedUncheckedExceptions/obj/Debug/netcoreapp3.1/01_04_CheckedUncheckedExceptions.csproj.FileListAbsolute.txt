@@ -1,0 +1,13 @@
+C:\Users\maxim\Desktop\Programming\EPAMTraining\01_04_CheckedUncheckedExceptions\bin\Debug\netcoreapp3.1\01_04_CheckedUncheckedExceptions.exe
+C:\Users\maxim\Desktop\Programming\EPAMTraining\01_04_CheckedUncheckedExceptions\bin\Debug\netcoreapp3.1\01_04_CheckedUncheckedExceptions.deps.json
+C:\Users\maxim\Desktop\Programming\EPAMTraining\01_04_CheckedUncheckedExceptions\bin\Debug\netcoreapp3.1\01_04_CheckedUncheckedExceptions.runtimeconfig.json
+C:\Users\maxim\Desktop\Programming\EPAMTraining\01_04_CheckedUncheckedExceptions\bin\Debug\netcoreapp3.1\01_04_CheckedUncheckedExceptions.runtimeconfig.dev.json
+C:\Users\maxim\Desktop\Programming\EPAMTraining\01_04_CheckedUncheckedExceptions\bin\Debug\netcoreapp3.1\01_04_CheckedUncheckedExceptions.dll
+C:\Users\maxim\Desktop\Programming\EPAMTraining\01_04_CheckedUncheckedExceptions\bin\Debug\netcoreapp3.1\01_04_CheckedUncheckedExceptions.pdb
+C:\Users\maxim\Desktop\Programming\EPAMTraining\01_04_CheckedUncheckedExceptions\obj\Debug\netcoreapp3.1\01_04_CheckedUncheckedExceptions.csprojAssemblyReference.cache
+C:\Users\maxim\Desktop\Programming\EPAMTraining\01_04_CheckedUncheckedExceptions\obj\Debug\netcoreapp3.1\01_04_CheckedUncheckedExceptions.csproj.CoreCompileInputs.cache
+C:\Users\maxim\Desktop\Programming\EPAMTraining\01_04_CheckedUncheckedExceptions\obj\Debug\netcoreapp3.1\01_04_CheckedUncheckedExceptions.AssemblyInfoInputs.cache
+C:\Users\maxim\Desktop\Programming\EPAMTraining\01_04_CheckedUncheckedExceptions\obj\Debug\netcoreapp3.1\01_04_CheckedUncheckedExceptions.AssemblyInfo.cs
+C:\Users\maxim\Desktop\Programming\EPAMTraining\01_04_CheckedUncheckedExceptions\obj\Debug\netcoreapp3.1\01_04_CheckedUncheckedExceptions.dll
+C:\Users\maxim\Desktop\Programming\EPAMTraining\01_04_CheckedUncheckedExceptions\obj\Debug\netcoreapp3.1\01_04_CheckedUncheckedExceptions.pdb
+C:\Users\maxim\Desktop\Programming\EPAMTraining\01_04_CheckedUncheckedExceptions\obj\Debug\netcoreapp3.1\01_04_CheckedUncheckedExceptions.genruntimeconfig.cache

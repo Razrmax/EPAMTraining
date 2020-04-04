@@ -43,6 +43,7 @@ namespace TrapezoidShape.driver
                         else
                         {
                             Console.WriteLine("Trapezoid with stated values cannot exist.");
+                            trapezoid = null;
                         }
                         break;
                     case "2":
@@ -134,10 +135,10 @@ namespace TrapezoidShape.driver
         //    /l1|__a_______|l2\
         static bool IsValidTrapezoid(double a, double b, double c, double d, double h)
         {
-            //if (a == b || (c == h || d == h))
-            //{
-            //    return false;
-            //}
+            if (a == b)
+            {
+                return false;
+            }
             Triangle triangle = new Triangle(h,c,true);
             double l1 = triangle.BSide;
             double l2 = a - b - l1;
