@@ -8,7 +8,7 @@ namespace DividerIndex.model
     /// </summary>
     class FileManager
     {
-        
+
         /// <summary>
         /// Reads specified string file, verifies that it contains the minimum required number of elements, and returns these elements as a string ("" if values are invalid).
         /// </summary>

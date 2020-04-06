@@ -23,7 +23,7 @@ namespace TrapezoidShape.driver
         static void Main()
         {
             bool exit = false;
-            
+
             Trapezoid trapezoid = null;
 
             while (!exit)
@@ -35,7 +35,7 @@ namespace TrapezoidShape.driver
                 {
                     case "1":
                         GetUserTrapezoidSides(out double a, out double b, out double c, out double d, out double h);
-                        if (IsValidTrapezoid(a,b,c,d,h))
+                        if (IsValidTrapezoid(a, b, c, d, h))
                         {
                             Console.WriteLine("Trapezoid can exist.");
                             trapezoid = new Trapezoid(a, b, c, d, h);
@@ -73,12 +73,12 @@ namespace TrapezoidShape.driver
         static void GetUserTrapezoidSides(out double a, out double b, out double c, out double d, out double h)
         {
             double[] userValues = new Double[5];
-            Console.WriteLine(@"     ____b______"); 
+            Console.WriteLine(@"     ____b______");
             Console.WriteLine(@"    /|          |\");
             Console.WriteLine(@"  c/ |h         | \d");
             Console.WriteLine(@"  /__|__a_______|__\");
             Console.WriteLine("Please Enter each of the four sides (a,b,c,d) of a trapezoid as illustrated above (from 1 to 8), and a h h: ");
-            
+
             for (int i = 0; i < userValues.Length; i++)
             {
                 try
@@ -91,7 +91,7 @@ namespace TrapezoidShape.driver
                         continue;
                     }
 
-                    userValues[i] = Math.Round(input,1,MidpointRounding.AwayFromZero);
+                    userValues[i] = Math.Round(input, 1, MidpointRounding.AwayFromZero);
                 }
                 catch (Exception)
                 {
@@ -139,10 +139,10 @@ namespace TrapezoidShape.driver
             {
                 return false;
             }
-            Triangle triangle = new Triangle(h,c,true);
+            Triangle triangle = new Triangle(h, c, true);
             double l1 = triangle.BSide;
             double l2 = a - b - l1;
-            Triangle triangle2 = new Triangle(l2,h,false);
+            Triangle triangle2 = new Triangle(l2, h, false);
             if (!triangle2.IsRightTriangle)
             {
                 return false;

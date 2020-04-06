@@ -13,7 +13,7 @@ namespace ConsoleApp1
         }
         static void Main()
         {
-            a =                 Foo();
+            a = Foo();
             Console.WriteLine(a);
         }
     }

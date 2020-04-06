@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TrapezoidShape.model
+﻿namespace TrapezoidShape.model
 {
     /// <summary>
     /// Trapezoid shape class, stores values of a trapezoid sides a,b,c,d, and height h as readonly properties
@@ -10,7 +8,7 @@ namespace TrapezoidShape.model
     //      /|          |\ 
     //    c/ |h         | \d
     //    /__|__a_______|__\
-    class Trapezoid 
+    class Trapezoid
     {
         public double ASide { get; }
         public double BSide { get; }
@@ -34,7 +32,7 @@ namespace TrapezoidShape.model
             CSide = c;
             DSide = d;
             H = h;
-            
+
             Area = CalcArea();
             Perimeter = CalcPerimeter();
         }

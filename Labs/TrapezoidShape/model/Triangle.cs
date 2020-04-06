@@ -40,7 +40,7 @@ namespace TrapezoidShape.model
         /// <returns>double leg</returns>
         private double CalcTriangleLeg()
         {
-            return Math.Round(Math.Sqrt(Math.Pow(CSide, 2) - Math.Pow(ASide, 2)),1,MidpointRounding.AwayFromZero);
+            return Math.Round(Math.Sqrt(Math.Pow(CSide, 2) - Math.Pow(ASide, 2)), 1, MidpointRounding.AwayFromZero);
         }
         /// <summary>
         /// Finds the hypotenuse of a triangle based on Pythagoras theorem  x = (V(a^2 + b^2))
@@ -48,7 +48,7 @@ namespace TrapezoidShape.model
         /// <returns>double hypotenuse</returns>
         private double CalcTriangleHypo()
         {
-            return Math.Round(Math.Sqrt(Math.Pow(ASide, 2) + Math.Pow(BSide, 2)),1,MidpointRounding.AwayFromZero);
+            return Math.Round(Math.Sqrt(Math.Pow(ASide, 2) + Math.Pow(BSide, 2)), 1, MidpointRounding.AwayFromZero);
         }
     }
 }

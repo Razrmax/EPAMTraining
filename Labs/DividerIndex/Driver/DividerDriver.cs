@@ -15,16 +15,16 @@ namespace DividerIndex
             string inputFilePath = @"C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DividerIndex\src\Inlet.in";
             string outputFilePath = @"C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DividerIndex\src\Outlet.in";
             FileManager fileManager = new FileManager();
-            string values = fileManager.ReadFile(inputFilePath,3);
+            string values = fileManager.ReadFile(inputFilePath, 3);
             if (values != "")
             {
                 fileManager.ProcessInputFile(out int elementsNumber, out int dividend, values, out int[] elements);
-                NumbersArray numArray = new NumbersArray(elementsNumber,dividend,elements);
+                NumbersArray numArray = new NumbersArray(elementsNumber, dividend, elements);
                 values = numArray.GetDividers();
-                fileManager.WriteFile(values,outputFilePath);
+                fileManager.WriteFile(values, outputFilePath);
             }
 
-            
+
             bool exit = false;
 
             while (!exit)
@@ -35,12 +35,12 @@ namespace DividerIndex
                 switch (choice)
                 {
                     case "1":
-                        values = fileManager.ReadFile(outputFilePath,1);
+                        values = fileManager.ReadFile(outputFilePath, 1);
                         DisplayResult(values);
                         break;
 
                     case "2":
-                        values = fileManager.ReadFile(inputFilePath,1);
+                        values = fileManager.ReadFile(inputFilePath, 1);
                         DisplayResult(values);
                         break;
 
@@ -48,7 +48,7 @@ namespace DividerIndex
                         GetLengthAndDivider(out int elementsNumber, out int dividend);
                         GetElements(out int[] elements, elementsNumber);
                         fileManager.WriteFile(elementsNumber + " " + dividend + "\n", elements, inputFilePath);
-                        NumbersArray numArray = new NumbersArray(elementsNumber,dividend,elements);
+                        NumbersArray numArray = new NumbersArray(elementsNumber, dividend, elements);
                         string dividers = numArray.GetDividers();
                         fileManager.WriteFile(dividers, outputFilePath);
                         break;

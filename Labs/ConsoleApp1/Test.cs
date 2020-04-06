@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
 namespace ConsoleApp1
 {
@@ -36,7 +34,7 @@ namespace ConsoleApp1
             catch (Exception)
             {
                 Console.WriteLine("Error reading file: " + filePath);
-            }            
+            }
         }
     }
 }
