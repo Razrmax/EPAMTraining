@@ -1,10 +1,10 @@
-﻿using System;
-using ExceptionsHandling.exceptions;
+﻿using ExceptionsHandling.exceptions;
 using ExceptionsHandling.models;
+using System;
 
 namespace ExceptionsHandling.driver
 {
-    class Program
+    class MatrixDriver
     {
         private static Matrix _m;
         private static Matrix _n;
@@ -17,7 +17,7 @@ namespace ExceptionsHandling.driver
             {
                 DisplayMainMenu();
                 string input = Console.ReadLine();
-                
+
 
                 switch (input)
                 {
@@ -179,7 +179,7 @@ namespace ExceptionsHandling.driver
                 Console.WriteLine("Please input values for row {0}:", i + 1);
                 for (int j = 0; j < x.Columns; j++)
                 {
-                    x.Values[i, j] = GetNumber();
+                    x.Values[i, j] = GetDouble();
                 }
             }
 
@@ -197,7 +197,7 @@ namespace ExceptionsHandling.driver
             {
                 for (int j = 0; j < x.Columns; j++)
                 {
-                    x.Values[i, j] = rand.Next(0, 5);
+                    x.Values[i, j] = Convert.ToDouble(rand.Next(1, 5));
                 }
             }
 
@@ -215,7 +215,7 @@ namespace ExceptionsHandling.driver
             Console.WriteLine("Please enter columns: ");
             int columns = GetNumber();
 
-            return new Matrix(new int[] { rows, columns});
+            return new Matrix(new int[] { rows, columns });
         }
 
         private static int GetNumber()
@@ -228,6 +228,18 @@ namespace ExceptionsHandling.driver
             }
 
             return int.Parse(str);
+        }
+
+        private static double GetDouble()
+        {
+            string str = Console.ReadLine();
+            while (double.TryParse(str, out _) == false)
+            {
+                Console.WriteLine("Error, please enter numeric value!");
+                str = Console.ReadLine();
+            }
+
+            return double.Parse(str);
         }
     }
 }

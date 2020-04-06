@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace OperatorOverloading.exceptions
 {
@@ -12,7 +10,7 @@ namespace OperatorOverloading.exceptions
         {
             Console.WriteLine(base.Message);
         }
-        
+
         public InsufficientComponentsException(int length) : base(Components)
         {
             Console.WriteLine(base.Message);

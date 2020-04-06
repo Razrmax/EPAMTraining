@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using OperatorOverloading.exceptions;
+﻿using OperatorOverloading.exceptions;
+using System;
 
 namespace OperatorOverloading.model
 {
@@ -128,11 +126,11 @@ namespace OperatorOverloading.model
 
         public static bool operator ==(Vector3D v1, Vector3D v2)
         {
-            if (ReferenceEquals(v2, null))
+            if (v2 is null)
             {
-                return ReferenceEquals(v1, null);
+                return v1 is null;
             }
-            return v1.Equals(v2);
+            return v1.Equals(v2, 0.0001);
         }
 
         public static bool operator !=(Vector3D v1, Vector3D v2)
@@ -157,22 +155,22 @@ namespace OperatorOverloading.model
             }
         }
 
-        public bool Equals(Vector3D o)
-        {
-            return
-                this.X.Equals(o.X) &&
-                this.Y.Equals(o.Y) &&
-                this.Z.Equals(o.Z);
-        }
+        //public bool Equals(Vector3D o)
+        //{
+        //    return
+        //        this.X.Equals(o.X, 0.0001) &&
+        //        this.Y.Equals(o.Y, 0.0001) &&
+        //        this.Z.Equals(o.Z, 0.0001);
+        //}
 
-        public bool Equals(object o, double tolerance)
-        {
-            if (o is Vector3D)
-            {
-                return this.Equals((Vector3D)o, tolerance);
-            }
-            return false;
-        }
+        //public bool Equals(object o, double tolerance)
+        //{
+        //    if (o is Vector3D)
+        //    {
+        //        return this.Equals((Vector3D)o, tolerance);
+        //    }
+        //    return false;
+        //}
 
         public bool Equals(Vector3D o, double tolerance)
         {
@@ -184,7 +182,7 @@ namespace OperatorOverloading.model
 
         public static bool AlmostEqualsWithAbsTolerance(double a, double b, double maxAbsoluteError)
         {
-            double difference = Math.Abs(a - b);
+            double difference = Math.Abs(a) - Math.Abs(b);
 
             if (a.Equals(b))
             {
@@ -197,7 +195,7 @@ namespace OperatorOverloading.model
 
         public override string ToString()
         {
-            string s = ("({0:N2}, {1:N2}, {2:N2})", X, Y, Z);
+            string s = "( " + X.ToString("0.##") + ", " + Y.ToString("0.##") + ", " + Z.ToString("0.##") + " )";
             return s;
         }
     }

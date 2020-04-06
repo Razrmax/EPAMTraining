@@ -1,5 +1,5 @@
-﻿using System;
-using ExceptionsHandling.exceptions;
+﻿using ExceptionsHandling.exceptions;
+using System;
 
 namespace ExceptionsHandling.models
 {
@@ -8,7 +8,7 @@ namespace ExceptionsHandling.models
     /// </summary>
     class Matrix
     {
-        public int[,] Values { get; private set; }
+        public double[,] Values { get; private set; }
         public int Rows { get; private set; }
         public int Columns { get; private set; }
         public Matrix()
@@ -20,7 +20,7 @@ namespace ExceptionsHandling.models
         /// <param name="length">int[0] = rows,int [1] = columns</param>
         public Matrix(int[] length)
         {
-            Values = new int[length[0], length[1]];
+            Values = new double[length[0], length[1]];
             Rows = Values.GetLength(0);
             Columns = Values.GetLength(1);
         }
@@ -28,7 +28,7 @@ namespace ExceptionsHandling.models
         /// Takes 2-dimensional array values and initializes Values property
         /// </summary>
         /// <param name="values">values of a new Matrix</param>
-        public Matrix(int[,] values)
+        public Matrix(double[,] values)
         {
             Values = values;
             Rows = Values.GetLength(0);
@@ -47,7 +47,7 @@ namespace ExceptionsHandling.models
         /// <param name="length">Length of columns in the resulting 1-dimensional array</param>
         public Matrix(int length)
         {
-            Values = new int[length,1];
+            Values = new double[length, 1];
         }
 
         /// <summary>
@@ -97,12 +97,12 @@ namespace ExceptionsHandling.models
             return this;
         }
 
-        public static Matrix operator+ (Matrix a, Matrix b)
+        public static Matrix operator +(Matrix a, Matrix b)
         {
             Matrix result;
             try
             {
-                ValidateMatricesSize(a,b,"+");
+                ValidateMatricesSize(a, b, "+");
                 result = new Matrix(new int[] { a.Rows, a.Columns });
                 for (int i = 0; i < a.Rows; i++)
                 {
@@ -146,7 +146,7 @@ namespace ExceptionsHandling.models
             Matrix result;
             try
             {
-                ValidateMatricesSize(a,b,"*");
+                ValidateMatricesSize(a, b, "*");
                 result = new Matrix(new int[] { a.Rows, b.Columns });
                 for (int i = 0; i < result.Rows; i++)
                 {
@@ -162,7 +162,7 @@ namespace ExceptionsHandling.models
             {
                 return null;
             }
-            
+
             return result;
         }
 

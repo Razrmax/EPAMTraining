@@ -1,0 +1,13 @@
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Test\bin\Debug\netcoreapp3.1\Test.exe
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Test\bin\Debug\netcoreapp3.1\Test.deps.json
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Test\bin\Debug\netcoreapp3.1\Test.runtimeconfig.json
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Test\bin\Debug\netcoreapp3.1\Test.runtimeconfig.dev.json
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Test\bin\Debug\netcoreapp3.1\Test.dll
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Test\bin\Debug\netcoreapp3.1\Test.pdb
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Test\obj\Debug\netcoreapp3.1\Test.csproj.CoreCompileInputs.cache
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Test\obj\Debug\netcoreapp3.1\Test.AssemblyInfoInputs.cache
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Test\obj\Debug\netcoreapp3.1\Test.AssemblyInfo.cs
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Test\obj\Debug\netcoreapp3.1\Test.dll
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Test\obj\Debug\netcoreapp3.1\Test.pdb
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Test\obj\Debug\netcoreapp3.1\Test.genruntimeconfig.cache
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Test\obj\Debug\netcoreapp3.1\Test.csprojAssemblyReference.cache

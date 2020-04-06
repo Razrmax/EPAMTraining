@@ -4,7 +4,7 @@ namespace _01_04_CheckedUncheckedExceptions
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             MyArr myObject1 = new MyArr(x: 4, z: 5, y: 12);
             MyArr myObject2 = new MyArr(x: 4, z: 5, y: 12);
