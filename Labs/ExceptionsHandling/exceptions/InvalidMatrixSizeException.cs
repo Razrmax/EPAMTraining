@@ -31,7 +31,7 @@ namespace ExceptionsHandling.exceptions
             this.XDimensions = xDimensions;
             this.YDimensions = yDimensions;
             this.OperationName = operationName;
-            Console.WriteLine(Message);
+            Console.WriteLine(base.Message);
             Console.WriteLine("Operation: " + operationName);
             Console.WriteLine("Matrix A dimensions: {0}{1}", xDimensions[0], xDimensions[1]);
             Console.WriteLine("Matrix B dimensions: {0}{1}", yDimensions[0], yDimensions[1]);
