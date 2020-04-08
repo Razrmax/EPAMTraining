@@ -5,12 +5,14 @@ namespace ExceptionsHandling.exceptions
     [Serializable]
     class InvalidOperatorException : Exception
     {
-        private new static readonly string Message = "Wrong arithmetic operator: ";
+        private new static readonly string Message = "Invalid operator: ";
+        public string Oper { get; }
 
 
-        public InvalidOperatorException(string str) : base(Message)
+        public InvalidOperatorException(string oper) : base(Message)
         {
-            Console.WriteLine(base.Message + str);
+            Oper = oper;
+            Console.WriteLine(base.Message + Oper);
         }
     }
 }

@@ -21,7 +21,7 @@ namespace Test
     }
 
 
-    
+
 
     public enum ResidenceType
     {

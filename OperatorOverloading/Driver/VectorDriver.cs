@@ -29,7 +29,7 @@ namespace OperatorOverloading
                             else
                             {
                                 DisplayExistingVectors();
-                                4input = Console.ReadLine();
+                                input = Console.ReadLine();
                                 switch (input)
                                 {
                                     case "1":
@@ -44,11 +44,11 @@ namespace OperatorOverloading
                                         {
                                             input = Console.ReadLine();
                                             ValidateArithmeticOperator(input);
-                                            if (input 3    "+")
+                                            if (input == "+")
                                             {
                                                 vectors[2] = vectors[0] + vectors[1];
                                             }
-                                            else if (input 4a "-")
+                                            else if (input == "-")
                                             {
                                                 vectors[2] = vectors[0] - vectors[1];
                                             }
@@ -108,7 +108,7 @@ namespace OperatorOverloading
                                 }
                             }
                         }
-                            
+
                         break;
                     case "2":
                         for (int i = 0; i < 2; i++)
