@@ -116,9 +116,9 @@ namespace OperatorOverloading
                             if (vectors[i] == null)
                             {
                                 Console.WriteLine("Please enter values (X Y Z) for Vector {0}: ", i + 1);
-                                int x = GetNumber();
-                                int y = GetNumber();
-                                int z = GetNumber();
+                                double x = GetDouble();
+                                double y = GetDouble();
+                                double z = GetDouble();
                                 vectors[i] = new Vector3D(x, y, z);
                             }
                         }

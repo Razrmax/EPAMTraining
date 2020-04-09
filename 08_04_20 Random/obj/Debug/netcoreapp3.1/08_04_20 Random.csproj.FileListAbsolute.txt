@@ -1,0 +1,13 @@
+C:\Users\maxim\Desktop\Programming\EPAMTraining\08_04_20 Random\bin\Debug\netcoreapp3.1\08_04_20 Random.exe
+C:\Users\maxim\Desktop\Programming\EPAMTraining\08_04_20 Random\bin\Debug\netcoreapp3.1\08_04_20 Random.deps.json
+C:\Users\maxim\Desktop\Programming\EPAMTraining\08_04_20 Random\bin\Debug\netcoreapp3.1\08_04_20 Random.runtimeconfig.json
+C:\Users\maxim\Desktop\Programming\EPAMTraining\08_04_20 Random\bin\Debug\netcoreapp3.1\08_04_20 Random.runtimeconfig.dev.json
+C:\Users\maxim\Desktop\Programming\EPAMTraining\08_04_20 Random\bin\Debug\netcoreapp3.1\08_04_20 Random.dll
+C:\Users\maxim\Desktop\Programming\EPAMTraining\08_04_20 Random\bin\Debug\netcoreapp3.1\08_04_20 Random.pdb
+C:\Users\maxim\Desktop\Programming\EPAMTraining\08_04_20 Random\obj\Debug\netcoreapp3.1\08_04_20 Random.csprojAssemblyReference.cache
+C:\Users\maxim\Desktop\Programming\EPAMTraining\08_04_20 Random\obj\Debug\netcoreapp3.1\08_04_20 Random.csproj.CoreCompileInputs.cache
+C:\Users\maxim\Desktop\Programming\EPAMTraining\08_04_20 Random\obj\Debug\netcoreapp3.1\08_04_20 Random.AssemblyInfoInputs.cache
+C:\Users\maxim\Desktop\Programming\EPAMTraining\08_04_20 Random\obj\Debug\netcoreapp3.1\08_04_20 Random.AssemblyInfo.cs
+C:\Users\maxim\Desktop\Programming\EPAMTraining\08_04_20 Random\obj\Debug\netcoreapp3.1\08_04_20 Random.dll
+C:\Users\maxim\Desktop\Programming\EPAMTraining\08_04_20 Random\obj\Debug\netcoreapp3.1\08_04_20 Random.pdb
+C:\Users\maxim\Desktop\Programming\EPAMTraining\08_04_20 Random\obj\Debug\netcoreapp3.1\08_04_20 Random.genruntimeconfig.cache
