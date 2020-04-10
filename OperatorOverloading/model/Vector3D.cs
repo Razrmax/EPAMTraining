@@ -67,6 +67,8 @@ namespace OperatorOverloading.model
             );
         }
 
+
+
         public static Vector3D operator +(Vector3D v1, Vector3D v2)
         {
             return new Vector3D(

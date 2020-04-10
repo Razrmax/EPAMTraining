@@ -12,13 +12,13 @@ namespace OperatorOverloading.exceptions
         {
             Actual = actual;
             Expected = expected;
-            Console.WriteLine(DefaultMessage);
+            Console.WriteLine(base.Message);
             Console.WriteLine("Expected: " + Expected);
             Console.WriteLine("Actual: " + Actual);
         }
-        public InvalidOperandException(string str, int expected, int actual) : base(str)
+        public InvalidOperandException(string message, int expected, int actual) : base(message)
         {
-            Console.WriteLine(str);
+            Console.WriteLine(base.Message);
             Actual = Convert.ToString(actual);
             Expected = Convert.ToString(expected);
             Console.WriteLine("Expected length: " + Expected);
