@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\08_04_20 Random\\08_04_20 Random.csproj": {}
+    "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\08_04_20 Random\\08_04_20 Random.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\08_04_20 Random\\08_04_20 Random.csproj": {
+    "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\08_04_20 Random\\08_04_20 Random.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\08_04_20 Random\\08_04_20 Random.csproj",
+        "projectUniqueName": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\08_04_20 Random\\08_04_20 Random.csproj",
         "projectName": "08_04_20 Random",
-        "projectPath": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\08_04_20 Random\\08_04_20 Random.csproj",
-        "packagesPath": "C:\\Users\\Maxim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\08_04_20 Random\\obj\\",
+        "projectPath": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\08_04_20 Random\\08_04_20 Random.csproj",
+        "packagesPath": "C:\\Users\\maxim\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\08_04_20 Random\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
