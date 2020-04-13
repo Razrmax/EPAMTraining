@@ -1,0 +1,13 @@
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Labs\Intrerfaces\bin\Debug\netcoreapp3.1\Interfaces.exe
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Labs\Intrerfaces\bin\Debug\netcoreapp3.1\Interfaces.deps.json
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Labs\Intrerfaces\bin\Debug\netcoreapp3.1\Interfaces.runtimeconfig.json
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Labs\Intrerfaces\bin\Debug\netcoreapp3.1\Interfaces.runtimeconfig.dev.json
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Labs\Intrerfaces\bin\Debug\netcoreapp3.1\Interfaces.dll
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Labs\Intrerfaces\bin\Debug\netcoreapp3.1\Interfaces.pdb
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Labs\Intrerfaces\obj\Debug\netcoreapp3.1\Interfaces.csprojAssemblyReference.cache
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Labs\Intrerfaces\obj\Debug\netcoreapp3.1\Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Labs\Intrerfaces\obj\Debug\netcoreapp3.1\Interfaces.AssemblyInfoInputs.cache
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Labs\Intrerfaces\obj\Debug\netcoreapp3.1\Interfaces.AssemblyInfo.cs
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Labs\Intrerfaces\obj\Debug\netcoreapp3.1\Interfaces.dll
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Labs\Intrerfaces\obj\Debug\netcoreapp3.1\Interfaces.pdb
+C:\Users\maxim\Desktop\Programming\EPAMTraining\Labs\Intrerfaces\obj\Debug\netcoreapp3.1\Interfaces.genruntimeconfig.cache

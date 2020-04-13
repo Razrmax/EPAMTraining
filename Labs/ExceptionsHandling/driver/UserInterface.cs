@@ -1,7 +1,7 @@
-﻿using System;
-using System.Linq;
-using ExceptionsHandling.exceptions;
+﻿using ExceptionsHandling.exceptions;
 using ExceptionsHandling.models;
+using System;
+using System.Linq;
 
 namespace ExceptionsHandling.driver
 {
