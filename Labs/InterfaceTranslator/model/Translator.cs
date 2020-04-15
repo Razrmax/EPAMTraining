@@ -6,7 +6,7 @@ namespace InterfaceTranslator.model
     {
         private readonly Vocabulary _rusEngVocabulary;
         private readonly Vocabulary _engRusVocabulary;
-        
+
         public Translator()
         {
             _engRusVocabulary = new Vocabulary("EN-RU");
@@ -26,9 +26,10 @@ namespace InterfaceTranslator.model
                 targetText = "";
                 Vocabulary currentVocabulary = IsCyrillicText(sourceText) ? _rusEngVocabulary : _engRusVocabulary;
 
+
                 foreach (string word in sourceWords)
                 {
-                    targetText += currentVocabulary.GetTranslation(word) + " ";
+                    targetText += currentVocabulary.Translate(word) + " ";
                 }
 
                 return targetText;
@@ -36,14 +37,15 @@ namespace InterfaceTranslator.model
 
             return targetText;
         }
+
         /// <summary>
         /// Checks that the whole sentence is Cyrillic and returns true if yes, false if at less one character is non-Cyrillic
         /// </summary>
         /// <param name="sentence">input string to be checked</param>
         /// <returns>true if all characters are Cyrillic, false otherwise </returns>
-        public bool IsCyrillicText(string sentence)
+        public static bool IsCyrillicText(string str)
         {
-            if (!Regex.IsMatch(sentence.Replace(" ", string.Empty), @"\P{IsCyrillic}"))
+            if (!Regex.IsMatch(str.Replace(" ", string.Empty), @"\P{IsCyrillic}"))
             {
                 return true;
             }

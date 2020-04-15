@@ -2,7 +2,7 @@
 
 {
     class ProgramHelper : ProgramConverter, ICodeChecker, IConvertible
-        {
+    {
         public bool CheckCodeSyntax(string code, string language)
         {
             return true;

@@ -1,5 +1,5 @@
-﻿using System;
-using InterfaceTranslator.model;
+﻿using InterfaceTranslator.model;
+using System;
 
 namespace InterfaceTranslator.driver
 {
@@ -7,20 +7,31 @@ namespace InterfaceTranslator.driver
     {
         static void Main()
         {
-            Vocabulary engRusDictionary = new Vocabulary("EN-RU"); 
-            Vocabulary rusEngDictionary = new Vocabulary("RU-EN");
+            TranslationMemory engRusTM = new TranslationMemory("EN-RU");
+            TranslationMemory rusEngTM = new TranslationMemory("RU-EN");
 
             Translator translator = new Translator();
-            string translatableText = Console.ReadLine();
             bool exit = false;
 
             while (!exit)
             {
                 string source = Console.ReadLine();
-                
+
                 if (source != "_exit")
                 {
-                    Console.WriteLine(translator.Translate(source));
+                    TranslationMemory currentTM = Translator.IsCyrillicText(source)
+                        ? rusEngTM
+                        : engRusTM;
+                    if (currentTM.VerifyTranslationExists(source))
+                    {
+                        Console.WriteLine(currentTM.Translate(source));
+                    }
+                    else
+                    {
+                        string target = translator.Translate(source);
+                        Console.WriteLine(target);
+                        currentTM.AddTranslation(source, target);
+                    }
                 }
 
                 else

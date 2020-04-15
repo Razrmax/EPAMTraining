@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using InterfaceTranslator.exceptions;
 
 namespace InterfaceTranslator.model
 {
-    class Vocabulary : TranslationMemory
+    class Vocabulary : TranslationMemory, ITermsGenerator
     {
 
         public Vocabulary(string languagePair) : base(languagePair)
@@ -28,7 +27,7 @@ namespace InterfaceTranslator.model
                     File.ReadAllLines(
                         @"C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\InterfaceTranslator\storage\RUS Voc.txt");
             }
-            else 
+            else
             {
                 sourceWords =
                     File.ReadAllLines(

@@ -1,8 +1,10 @@
-﻿namespace InterfaceTranslator.model
+﻿using System.Text.RegularExpressions;
+
+namespace InterfaceTranslator.model
 {
     interface ITranslatable
     {
         string Translate(string sentence);
-        bool IsCyrillicText(string str);
+        
     }
 }
