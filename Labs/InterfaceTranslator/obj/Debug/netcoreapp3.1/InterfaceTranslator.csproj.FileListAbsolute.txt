@@ -1,0 +1,13 @@
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\InterfaceTranslator\bin\Debug\netcoreapp3.1\InterfaceTranslator.exe
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\InterfaceTranslator\bin\Debug\netcoreapp3.1\InterfaceTranslator.deps.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\InterfaceTranslator\bin\Debug\netcoreapp3.1\InterfaceTranslator.runtimeconfig.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\InterfaceTranslator\bin\Debug\netcoreapp3.1\InterfaceTranslator.runtimeconfig.dev.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\InterfaceTranslator\bin\Debug\netcoreapp3.1\InterfaceTranslator.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\InterfaceTranslator\bin\Debug\netcoreapp3.1\InterfaceTranslator.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\InterfaceTranslator\obj\Debug\netcoreapp3.1\InterfaceTranslator.csprojAssemblyReference.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\InterfaceTranslator\obj\Debug\netcoreapp3.1\InterfaceTranslator.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\InterfaceTranslator\obj\Debug\netcoreapp3.1\InterfaceTranslator.AssemblyInfoInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\InterfaceTranslator\obj\Debug\netcoreapp3.1\InterfaceTranslator.AssemblyInfo.cs
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\InterfaceTranslator\obj\Debug\netcoreapp3.1\InterfaceTranslator.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\InterfaceTranslator\obj\Debug\netcoreapp3.1\InterfaceTranslator.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\InterfaceTranslator\obj\Debug\netcoreapp3.1\InterfaceTranslator.genruntimeconfig.cache

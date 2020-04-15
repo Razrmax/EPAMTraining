@@ -1,7 +1,7 @@
 ﻿namespace Interfaces.Model
 
 {
-    class ProgramHelper : ProgramConverter, ICodeChecker
+    class ProgramHelper : ProgramConverter, ICodeChecker, IConvertible
         {
         public bool CheckCodeSyntax(string code, string language)
         {

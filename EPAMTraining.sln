@@ -56,7 +56,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_04_CheckedUncheckedExcep
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Labs 13.04.20", "Labs 13.04.20", "{73EFC8EC-F2AC-4A80-A341-4642FFAA3F76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Labs\Intrerfaces\Interfaces.csproj", "{1BF6EDA9-D010-4902-9C5F-D3E892B29137}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Labs\Intrerfaces\Interfaces.csproj", "{1BF6EDA9-D010-4902-9C5F-D3E892B29137}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceTranslator", "Labs\InterfaceTranslator\InterfaceTranslator.csproj", "{5DE1284D-B94F-4869-B572-5A2445AD74BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -124,6 +126,10 @@ Global
 		{1BF6EDA9-D010-4902-9C5F-D3E892B29137}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BF6EDA9-D010-4902-9C5F-D3E892B29137}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BF6EDA9-D010-4902-9C5F-D3E892B29137}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DE1284D-B94F-4869-B572-5A2445AD74BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE1284D-B94F-4869-B572-5A2445AD74BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE1284D-B94F-4869-B572-5A2445AD74BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE1284D-B94F-4869-B572-5A2445AD74BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -153,6 +159,7 @@ Global
 		{1ADC248C-778E-405C-8711-39068F46C7A5} = {A0985839-91D2-40C3-8ECB-39484B9FE7E0}
 		{73EFC8EC-F2AC-4A80-A341-4642FFAA3F76} = {D717458F-3225-48EB-8115-AC2D3BA11723}
 		{1BF6EDA9-D010-4902-9C5F-D3E892B29137} = {73EFC8EC-F2AC-4A80-A341-4642FFAA3F76}
+		{5DE1284D-B94F-4869-B572-5A2445AD74BA} = {73EFC8EC-F2AC-4A80-A341-4642FFAA3F76}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A361BD53-AFB0-4B12-8101-41AF0B6007D2}
