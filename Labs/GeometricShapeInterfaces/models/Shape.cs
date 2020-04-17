@@ -1,28 +1,58 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Text;
 using GeometricShapeInterfaces.interfaces;
 
 
 namespace GeometricShapeInterfaces.models
 {
-    abstract class Shape : IShapeDimensions, IValidShape
+    abstract class Shape : Dimensions, IValidShape, IFileOperations
     {
-        public double[] Dimenions { get; set; }
+        protected readonly string FilePath =
+            @"C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\GeometricShapeInterfaces\storage\shape.txt";
 
-        public double CalcArea()
+        public Shape(string shapeType)
         {
-            throw new NotImplementedException();
+            ShapeType = shapeType;
         }
 
-        public double CalcPerimeter()
+        public Dimensions Sizes { get; private set; }
+        public string ShapeType { get; set; }
+
+        public virtual bool IsValidShape()
         {
-            throw new NotImplementedException();
+            if ((Math.Abs(Sizes.Sides[0] - Sizes.Sides[2]) > 0.01) || (Math.Abs(Sizes.Sides[1] - Sizes.Sides[3]) > 0.01))
+            {
+                return false;
+            }
+
+            return true;
         }
 
-        public bool IsValidShape()
+        public void SaveToFile()
         {
-            throw new NotImplementedException();
+            File.WriteAllText(FilePath, Sizes.ToString() + "\n" + ShapeType);
+        }
+
+        public void LoadFromFile()
+        {
+            if (File.Exists(FilePath))
+            {
+                string[] fileContents = File.ReadAllText(FilePath).Split("\n");
+                Sizes.SetDimensions(new double[] {Convert.ToDouble(fileContents[0].Split("\t"))});
+                ShapeType = fileContents[1];
+            }
+            else
+            {
+                Console.WriteLine("Cannot load file");
+            }
+        }
+
+        public override string ToString()
+        {
+            return Sizes.ToString() + "\nType of the shape: " + ShapeType;
         }
     }
 }

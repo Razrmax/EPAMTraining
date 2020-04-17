@@ -6,7 +6,7 @@ namespace GeometricShapeInterfaces.interfaces
 {
     interface IFileOperations : IShapeDimensions
     {
-        bool SaveToFile();
-        double[] LoadFromFile();
+        void SaveToFile();
+        void LoadFromFile();
     }
 }

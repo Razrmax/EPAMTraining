@@ -6,8 +6,8 @@ namespace GeometricShapeInterfaces.interfaces
 {
     interface IShapeDimensions
     {
-        double[] Dimenions { get; set; }
-        double CalcArea();
-        double CalcPerimeter();
+        double[] Sides { get; set; }
+        void CalcArea();
+        void CalcPerimeter();
     }
 }
