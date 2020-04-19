@@ -62,7 +62,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceTranslator", "Labs
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Labs 15.04.20", "Labs 15.04.20", "{030698DD-87BE-4DD6-837F-0F25C61827A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeometricShapeInterfaces", "Labs\GeometricShapeInterfaces\GeometricShapeInterfaces.csproj", "{870C6147-F0F5-4463-B12E-77A207A204D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeometricShapeInterfaces", "Labs\GeometricShapeInterfaces\GeometricShapeInterfaces.csproj", "{870C6147-F0F5-4463-B12E-77A207A204D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17_04_20 Delegates", "CodePlayGround\17_04_20 Delegates\17_04_20 Delegates.csproj", "{5CEB49A1-898F-4F1E-9FF6-3CE917B65E58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -138,6 +140,10 @@ Global
 		{870C6147-F0F5-4463-B12E-77A207A204D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{870C6147-F0F5-4463-B12E-77A207A204D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{870C6147-F0F5-4463-B12E-77A207A204D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CEB49A1-898F-4F1E-9FF6-3CE917B65E58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CEB49A1-898F-4F1E-9FF6-3CE917B65E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CEB49A1-898F-4F1E-9FF6-3CE917B65E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CEB49A1-898F-4F1E-9FF6-3CE917B65E58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -170,6 +176,7 @@ Global
 		{5DE1284D-B94F-4869-B572-5A2445AD74BA} = {73EFC8EC-F2AC-4A80-A341-4642FFAA3F76}
 		{030698DD-87BE-4DD6-837F-0F25C61827A7} = {D717458F-3225-48EB-8115-AC2D3BA11723}
 		{870C6147-F0F5-4463-B12E-77A207A204D8} = {030698DD-87BE-4DD6-837F-0F25C61827A7}
+		{5CEB49A1-898F-4F1E-9FF6-3CE917B65E58} = {A0985839-91D2-40C3-8ECB-39484B9FE7E0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A361BD53-AFB0-4B12-8101-41AF0B6007D2}

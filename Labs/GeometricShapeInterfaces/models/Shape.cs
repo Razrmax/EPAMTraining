@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Text;
 using GeometricShapeInterfaces.interfaces;
 
 
 namespace GeometricShapeInterfaces.models
 {
-    abstract class Shape : Dimensions, IValidShape, IFileOperations
+    class Shape : Dimensions, IValidShape, IFileOperations
     {
         protected readonly string FilePath =
             @"C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\GeometricShapeInterfaces\storage\shape.txt";
@@ -52,7 +49,7 @@ namespace GeometricShapeInterfaces.models
 
         public override string ToString()
         {
-            return Sizes.ToString() + "\nType of the shape: " + ShapeType;
+            return Sizes.ToString() + "\nType of the shape: " + ShapeType + "\nPerimeter: " + Perimeter + "\nArea: " + Area;
         }
     }
 }

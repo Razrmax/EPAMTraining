@@ -1,0 +1,12 @@
+C:\Users\maxim\Desktop\Programming\EPAMTraining\CodePlayGround\17_04_20 Delegates\bin\Debug\netcoreapp3.1\17_04_20 Delegates.exe
+C:\Users\maxim\Desktop\Programming\EPAMTraining\CodePlayGround\17_04_20 Delegates\bin\Debug\netcoreapp3.1\17_04_20 Delegates.deps.json
+C:\Users\maxim\Desktop\Programming\EPAMTraining\CodePlayGround\17_04_20 Delegates\bin\Debug\netcoreapp3.1\17_04_20 Delegates.runtimeconfig.json
+C:\Users\maxim\Desktop\Programming\EPAMTraining\CodePlayGround\17_04_20 Delegates\bin\Debug\netcoreapp3.1\17_04_20 Delegates.runtimeconfig.dev.json
+C:\Users\maxim\Desktop\Programming\EPAMTraining\CodePlayGround\17_04_20 Delegates\bin\Debug\netcoreapp3.1\17_04_20 Delegates.dll
+C:\Users\maxim\Desktop\Programming\EPAMTraining\CodePlayGround\17_04_20 Delegates\bin\Debug\netcoreapp3.1\17_04_20 Delegates.pdb
+C:\Users\maxim\Desktop\Programming\EPAMTraining\CodePlayGround\17_04_20 Delegates\obj\Debug\netcoreapp3.1\17_04_20 Delegates.csproj.CoreCompileInputs.cache
+C:\Users\maxim\Desktop\Programming\EPAMTraining\CodePlayGround\17_04_20 Delegates\obj\Debug\netcoreapp3.1\17_04_20 Delegates.AssemblyInfoInputs.cache
+C:\Users\maxim\Desktop\Programming\EPAMTraining\CodePlayGround\17_04_20 Delegates\obj\Debug\netcoreapp3.1\17_04_20 Delegates.AssemblyInfo.cs
+C:\Users\maxim\Desktop\Programming\EPAMTraining\CodePlayGround\17_04_20 Delegates\obj\Debug\netcoreapp3.1\17_04_20 Delegates.dll
+C:\Users\maxim\Desktop\Programming\EPAMTraining\CodePlayGround\17_04_20 Delegates\obj\Debug\netcoreapp3.1\17_04_20 Delegates.pdb
+C:\Users\maxim\Desktop\Programming\EPAMTraining\CodePlayGround\17_04_20 Delegates\obj\Debug\netcoreapp3.1\17_04_20 Delegates.genruntimeconfig.cache

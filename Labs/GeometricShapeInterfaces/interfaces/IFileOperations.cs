@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace GeometricShapeInterfaces.interfaces
+﻿namespace GeometricShapeInterfaces.interfaces
 {
-    interface IFileOperations : IShapeDimensions
+    interface IFileOperations
     {
         void SaveToFile();
         void LoadFromFile();

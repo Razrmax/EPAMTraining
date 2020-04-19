@@ -58,7 +58,7 @@ namespace GeometricShapeInterfaces
                     shape = new Triangle(type);
                     return true;
                 case "circle":
-                    shape = new Circle();
+                    shape = new Circle(type);
                     return true;
                 default:
                     return false;
