@@ -2,7 +2,7 @@
 {
     interface IFileOperations
     {
-        void SaveToFile(string fileName);
-        bool LoadFromFile(string fileName);
+        void SaveToFile();
+        bool LoadFromFile();
     }
 }

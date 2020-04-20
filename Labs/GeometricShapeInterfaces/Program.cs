@@ -32,7 +32,7 @@ namespace GeometricShapeInterfaces
                             }
                             break;
                         case "save":
-                            if (!SaveShape(input[1]))
+                            if (!SaveShape())
                             {
                                 Console.WriteLine("Failed saving _shape");
                             }
@@ -41,7 +41,7 @@ namespace GeometricShapeInterfaces
                             DisplayCurrentShape();
                             break;
                         case "load":
-                            LoadShape(input[1]);
+                            LoadShape();
                             break;
                         case "delete":
                             DeleteShape();
@@ -105,6 +105,7 @@ namespace GeometricShapeInterfaces
                     break;
             }
 
+            Console.WriteLine("Please enter {0} dimensions:", _shape.ShapeType);
             double[] input = new double[0];
             while (input.Length != dimensions)
             {
@@ -130,20 +131,20 @@ namespace GeometricShapeInterfaces
             _shape = null;
         }
 
-        public static bool SaveShape(string fileName)
+        public static bool SaveShape()
         {
             if (_shape != null)
             {
-                _shape.SaveToFile(fileName);
+                _shape.SaveToFile();
                 return true;
             }
 
             return false;
         }
 
-        public static void LoadShape(string fileName)
+        public static void LoadShape()
         {
-            if (!_shape.LoadFromFile(fileName))
+            if (!_shape.LoadFromFile())
             {
                 Console.WriteLine("Failed loading file");
             }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using GeometricShapeInterfaces.interfaces;
 
 
@@ -8,7 +9,7 @@ namespace GeometricShapeInterfaces.models
     class Shape : Dimensions, IValidShape, IFileOperations
     {
         protected readonly string FilePath =
-            @"C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\GeometricShapeInterfaces\storage\";
+            @"C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\GeometricShapeInterfaces\storage\shape.txt";
         public string ShapeType { get; set; }
 
         public Shape(double[] sides) : base(sides)
@@ -29,14 +30,14 @@ namespace GeometricShapeInterfaces.models
             return false;
         }
 
-        public void SaveToFile(string fileName)
+        public void SaveToFile()
         {
-            File.WriteAllText(FilePath + fileName, this.ToString());
+            File.WriteAllText(FilePath, this.ToString());
         }
 
-        public bool LoadFromFile(string fileName)
+        public bool LoadFromFile()
         {
-            if (File.Exists(FilePath+fileName))
+            if (File.Exists(FilePath))
             {
                 string[] fileContents = File.ReadAllText(FilePath).Split("\n");
                 SetDimensions(new double[] {Convert.ToDouble(fileContents[0].Split("\t"))});
@@ -51,7 +52,7 @@ namespace GeometricShapeInterfaces.models
 
         public override string ToString()
         {
-            return "\nType of the shape: " + ShapeType + "\n" + "Sides:\n" + Sides.ToString() + "\nPerimeter: " + Perimeter + "\nArea: " + Area;
+            return "\nType of the shape: " + ShapeType + "\n" + "Sides:\n" + String.Join(" ", Sides.Select(p => p.ToString()).ToArray()) + "\nPerimeter: " + Perimeter + "\nArea: " + Area;
         }
     }
 }
