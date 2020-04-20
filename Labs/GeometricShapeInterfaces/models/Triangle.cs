@@ -4,20 +4,21 @@ namespace GeometricShapeInterfaces.models
 {
     class Triangle : Shape
     {
-        public Triangle(string shapeType) : base(shapeType)
+        public Triangle()
         {
+            ShapeType = "triangle";
         }
 
         public override void CalcArea()
         {
-            double s = (Sizes.Sides[0] + Sizes.Sides[1] + Sizes.Sides[2]) / 2;
-            Perimeter = Math.Sqrt(s * (s - Sizes.Sides[0]) * (s - Sizes.Sides[1]) *
-                                  (s - Sizes.Sides[2]));
+            double s = (Sides[0] + Sides[1] + Sides[2]) / 2;
+            Area = Math.Sqrt(s * (s - Sides[0]) * (s - Sides[1]) *
+                                  (s - Sides[2]));
         }
 
         public override bool IsValidShape()
         {
-            if (Sizes.Sides[2] > Sizes.Sides[1] + Sizes.Sides[0])
+            if (Sides[2] > Sides[1] + Sides[0])
             {
                 return true;
             }

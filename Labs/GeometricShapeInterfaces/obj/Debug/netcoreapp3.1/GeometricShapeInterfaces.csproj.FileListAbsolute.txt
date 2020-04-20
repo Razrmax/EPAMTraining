@@ -1,0 +1,13 @@
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\GeometricShapeInterfaces\bin\Debug\netcoreapp3.1\GeometricShapeInterfaces.exe
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\GeometricShapeInterfaces\bin\Debug\netcoreapp3.1\GeometricShapeInterfaces.deps.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\GeometricShapeInterfaces\bin\Debug\netcoreapp3.1\GeometricShapeInterfaces.runtimeconfig.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\GeometricShapeInterfaces\bin\Debug\netcoreapp3.1\GeometricShapeInterfaces.runtimeconfig.dev.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\GeometricShapeInterfaces\bin\Debug\netcoreapp3.1\GeometricShapeInterfaces.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\GeometricShapeInterfaces\bin\Debug\netcoreapp3.1\GeometricShapeInterfaces.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\GeometricShapeInterfaces\obj\Debug\netcoreapp3.1\GeometricShapeInterfaces.csprojAssemblyReference.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\GeometricShapeInterfaces\obj\Debug\netcoreapp3.1\GeometricShapeInterfaces.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\GeometricShapeInterfaces\obj\Debug\netcoreapp3.1\GeometricShapeInterfaces.AssemblyInfoInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\GeometricShapeInterfaces\obj\Debug\netcoreapp3.1\GeometricShapeInterfaces.AssemblyInfo.cs
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\GeometricShapeInterfaces\obj\Debug\netcoreapp3.1\GeometricShapeInterfaces.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\GeometricShapeInterfaces\obj\Debug\netcoreapp3.1\GeometricShapeInterfaces.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\GeometricShapeInterfaces\obj\Debug\netcoreapp3.1\GeometricShapeInterfaces.genruntimeconfig.cache

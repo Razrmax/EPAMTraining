@@ -6,8 +6,9 @@ namespace GeometricShapeInterfaces.models
 {
     class Rectangle : Shape
     {
-        public Rectangle(string shapeType) : base(shapeType)
+        public Rectangle()
         {
+            ShapeType = "rectangle";
         }
     }
 }

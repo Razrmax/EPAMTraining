@@ -8,48 +8,50 @@ namespace GeometricShapeInterfaces.models
     class Shape : Dimensions, IValidShape, IFileOperations
     {
         protected readonly string FilePath =
-            @"C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\GeometricShapeInterfaces\storage\shape.txt";
+            @"C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\GeometricShapeInterfaces\storage\";
+        public string ShapeType { get; set; }
 
-        public Shape(string shapeType)
+        public Shape(double[] sides) : base(sides)
         {
-            ShapeType = shapeType;
         }
 
-        public Dimensions Sizes { get; private set; }
-        public string ShapeType { get; set; }
+        public Shape()
+        {
+        }
 
         public virtual bool IsValidShape()
         {
-            if ((Math.Abs(Sizes.Sides[0] - Sizes.Sides[2]) > 0.01) || (Math.Abs(Sizes.Sides[1] - Sizes.Sides[3]) > 0.01))
+            if (Sides[0] > 0 && Sides[1] > 0)
             {
-                return false;
+                return true;
             }
 
-            return true;
+            return false;
         }
 
-        public void SaveToFile()
+        public void SaveToFile(string fileName)
         {
-            File.WriteAllText(FilePath, Sizes.ToString() + "\n" + ShapeType);
+            File.WriteAllText(FilePath + fileName, this.ToString());
         }
 
-        public void LoadFromFile()
+        public bool LoadFromFile(string fileName)
         {
-            if (File.Exists(FilePath))
+            if (File.Exists(FilePath+fileName))
             {
                 string[] fileContents = File.ReadAllText(FilePath).Split("\n");
-                Sizes.SetDimensions(new double[] {Convert.ToDouble(fileContents[0].Split("\t"))});
+                SetDimensions(new double[] {Convert.ToDouble(fileContents[0].Split("\t"))});
                 ShapeType = fileContents[1];
+                Perimeter = Convert.ToDouble(fileContents[2]);
+                Area = Convert.ToDouble(fileContents[3]);
+                return true;
             }
-            else
-            {
-                Console.WriteLine("Cannot load file");
-            }
+
+            return false;
         }
 
         public override string ToString()
         {
-            return Sizes.ToString() + "\nType of the shape: " + ShapeType + "\nPerimeter: " + Perimeter + "\nArea: " + Area;
+            return "\nType of the shape: " + ShapeType + "\n" + "Sides:\n" + Sides.ToString() + "\nPerimeter: " + Perimeter + "\nArea: " + Area;
         }
     }
 }

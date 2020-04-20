@@ -6,23 +6,23 @@ namespace GeometricShapeInterfaces.models
 {
     class Circle : Shape
     {
-        public Circle(string shapeType) : base(shapeType)
+        public Circle()
         {
+            ShapeType = "circle";
         }
-
         public override void CalcPerimeter()
         {
-            Perimeter = 2 * Math.PI * Sizes.Sides[0];
+            Perimeter = 2 * Math.PI * Sides[0];
         }
 
         public override void CalcArea()
         {
-            Area = Math.PI * Math.Pow(Sizes.Sides[0], 2);
+            Area = Math.PI * Math.Pow(Sides[0], 2);
         }
 
         public override bool IsValidShape()
         {
-            return Sizes.Sides.Length == 1;
+            return Sides.Length == 1;
         }
     }
 }

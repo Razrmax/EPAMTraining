@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using GeometricShapeInterfaces.interfaces;
+﻿using GeometricShapeInterfaces.interfaces;
 
 namespace GeometricShapeInterfaces.models
 {
@@ -11,6 +7,15 @@ namespace GeometricShapeInterfaces.models
         public double[] Sides { get; set; }
         public double Perimeter { get; protected set; }
         public double Area { get; protected set; }
+
+        public Dimensions(double[] sides)
+        {
+            Sides = sides;
+        }
+
+        public Dimensions()
+        {
+        }
 
         public override string ToString()
         {
@@ -29,6 +34,8 @@ namespace GeometricShapeInterfaces.models
             {
                 Perimeter += v;
             }
+
+            Perimeter *= 2;
         }
 
         public virtual void CalcArea()
