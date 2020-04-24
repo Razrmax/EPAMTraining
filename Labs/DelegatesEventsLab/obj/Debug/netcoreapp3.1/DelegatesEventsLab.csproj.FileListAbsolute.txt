@@ -1,0 +1,13 @@
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DelegatesEventsLab\bin\Debug\netcoreapp3.1\DelegatesEventsLab.exe
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DelegatesEventsLab\bin\Debug\netcoreapp3.1\DelegatesEventsLab.deps.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DelegatesEventsLab\bin\Debug\netcoreapp3.1\DelegatesEventsLab.runtimeconfig.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DelegatesEventsLab\bin\Debug\netcoreapp3.1\DelegatesEventsLab.runtimeconfig.dev.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DelegatesEventsLab\bin\Debug\netcoreapp3.1\DelegatesEventsLab.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DelegatesEventsLab\bin\Debug\netcoreapp3.1\DelegatesEventsLab.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DelegatesEventsLab\obj\Debug\netcoreapp3.1\DelegatesEventsLab.csprojAssemblyReference.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DelegatesEventsLab\obj\Debug\netcoreapp3.1\DelegatesEventsLab.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DelegatesEventsLab\obj\Debug\netcoreapp3.1\DelegatesEventsLab.AssemblyInfoInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DelegatesEventsLab\obj\Debug\netcoreapp3.1\DelegatesEventsLab.AssemblyInfo.cs
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DelegatesEventsLab\obj\Debug\netcoreapp3.1\DelegatesEventsLab.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DelegatesEventsLab\obj\Debug\netcoreapp3.1\DelegatesEventsLab.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\DelegatesEventsLab\obj\Debug\netcoreapp3.1\DelegatesEventsLab.genruntimeconfig.cache
