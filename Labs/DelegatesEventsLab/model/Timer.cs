@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Threading;
-using System.Timers;
-using Microsoft.VisualBasic.CompilerServices;
 
 namespace DelegatesEventsLab.model
 {
@@ -14,11 +12,13 @@ namespace DelegatesEventsLab.model
     {
         public string Name { get; }
         public int CountdownLength { get; private set; }
+        private int notificationThreshold;
 
-        public Timer(string name, int countdownLength)
+        public Timer(string name, int countdownLength, int notificationThreshold)
         {
             Name = name;
             CountdownLength = countdownLength;
+            this.notificationThreshold = notificationThreshold;
         }
 
         public event EventHandler<TimerEventArgs> InitTimerEvent;
@@ -36,7 +36,14 @@ namespace DelegatesEventsLab.model
             int waitTime = CountdownLength;
             while (waitTime > 0)
             {
-                OnRunTimerEvent(new TimerEventArgs(Convert.ToString(waitTime--), CountdownLength));
+                if (waitTime == notificationThreshold)
+                {
+                    OnRunTimerEvent(new TimerEventArgs(Convert.ToString(waitTime--), CountdownLength));
+                }
+                else
+                {
+                    Console.WriteLine(waitTime--);
+                }
                 Thread.Sleep(1000);
             }
             OnEndTimerEvent(new TimerEventArgs("Countdown complete.", CountdownLength));

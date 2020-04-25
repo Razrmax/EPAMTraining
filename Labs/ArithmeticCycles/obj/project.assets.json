@@ -8,23 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Maxim\\.nuget\\packages\\": {},
+    "C:\\Users\\maxim\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\Labs\\ArithmeticCycles\\ArithmeticCycles.csproj",
+      "projectUniqueName": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\Labs\\ArithmeticCycles\\ArithmeticCycles.csproj",
       "projectName": "ArithmeticCycles",
-      "projectPath": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\Labs\\ArithmeticCycles\\ArithmeticCycles.csproj",
-      "packagesPath": "C:\\Users\\Maxim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\Labs\\ArithmeticCycles\\obj\\",
+      "projectPath": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\Labs\\ArithmeticCycles\\ArithmeticCycles.csproj",
+      "packagesPath": "C:\\Users\\maxim\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\Labs\\ArithmeticCycles\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -63,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
