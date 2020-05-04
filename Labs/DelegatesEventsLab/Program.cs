@@ -21,10 +21,42 @@ namespace DelegatesEventsLab
             Timer timer = new Timer(name, seconds, notificationThreshold);
             //ICountdownNotifier methodsSubscriber = new MethodsSubscriber(timer);
             ICountdownNotifier lambdaSubscriber = new LambdaSubscriber(timer);
-            ICountdownNotifier methodSubscriber = new MethodsSubscriber(timer);
-            ICountdownNotifier anonymousMethodsSubscriber = new AnonymousMethodSubscriber(timer);
-
+            ICountdownNotifier methodsSubscriber = new MethodsSubscriber(timer);
+            ICountdownNotifier anonymousMethodSubscriber = new AnonymousMethodSubscriber(timer);
+            ICountdownNotifier[] countdownNotifiers = new ICountdownNotifier[3];
+            countdownNotifiers[0] = methodsSubscriber;
+            countdownNotifiers[1] = anonymousMethodSubscriber;
+            countdownNotifiers[2] = lambdaSubscriber;
+                     
+            TimerSubscriberInit(countdownNotifiers);
+            TimerSubscriberRun(countdownNotifiers);
+            TimerSubscriberEnd(countdownNotifiers);
+            
             timer.StartCountdown();
+        }
+
+        public static void TimerSubscriberInit(ICountdownNotifier[] countdownNotifiers)
+        {
+            foreach (var v in countdownNotifiers)
+            {
+                v.Init();
+            }
+        }
+
+        public static void TimerSubscriberRun(ICountdownNotifier[] countdownNotifiers)
+        {
+            foreach (var v in countdownNotifiers)
+            {
+                v.Run();
+            }
+        }
+
+        public static void TimerSubscriberEnd(ICountdownNotifier[] countdownNotifiers)
+        {
+            foreach (var v in countdownNotifiers)
+            {
+                v.End();
+            }
         }
     }
 }

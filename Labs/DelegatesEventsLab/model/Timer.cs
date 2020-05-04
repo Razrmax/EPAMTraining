@@ -24,8 +24,7 @@ namespace DelegatesEventsLab.model
         public event EventHandler<TimerEventArgs> InitTimerEvent;
         public event EventHandler<TimerEventArgs> RunTimerEvent;
         public event EventHandler<TimerEventArgs> EndTimerEvent;
-
-
+        
         /// <summary>
         /// Declare the event using event handler
         /// </summary>
