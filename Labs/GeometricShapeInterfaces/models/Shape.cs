@@ -1,7 +1,7 @@
-﻿using System;
+﻿using GeometricShapeInterfaces.interfaces;
+using System;
 using System.IO;
 using System.Linq;
-using GeometricShapeInterfaces.interfaces;
 
 
 namespace GeometricShapeInterfaces.models
@@ -40,7 +40,7 @@ namespace GeometricShapeInterfaces.models
             if (File.Exists(FilePath))
             {
                 string[] fileContents = File.ReadAllText(FilePath).Split("\n");
-                SetDimensions(new double[] {Convert.ToDouble(fileContents[0].Split("\t"))});
+                SetDimensions(new double[] { Convert.ToDouble(fileContents[0].Split("\t")) });
                 ShapeType = fileContents[1];
                 Perimeter = Convert.ToDouble(fileContents[2]);
                 Area = Convert.ToDouble(fileContents[3]);

@@ -1,5 +1,5 @@
-﻿using System;
-using GeometricShapeInterfaces.models;
+﻿using GeometricShapeInterfaces.models;
+using System;
 
 namespace GeometricShapeInterfaces
 {
@@ -49,7 +49,7 @@ namespace GeometricShapeInterfaces
                     }
                 }
             }
-                
+
         }
 
         private static void DisplayHelpMenu()

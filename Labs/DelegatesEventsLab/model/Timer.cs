@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace DelegatesEventsLab.model
 {
-    
+
     /// <summary>
     /// A publisher class which imitates a countdown (Timer). Upon the initiation of the timer raises the event, counts down every second 
     /// which subscribed to this event
@@ -12,13 +12,13 @@ namespace DelegatesEventsLab.model
     {
         public string Name { get; }
         public int CountdownLength { get; private set; }
-        private int notificationThreshold;
+        private readonly int _notificationThreshold;
 
         public Timer(string name, int countdownLength, int notificationThreshold)
         {
             Name = name;
             CountdownLength = countdownLength;
-            this.notificationThreshold = notificationThreshold;
+            _notificationThreshold = notificationThreshold;
         }
 
         public event EventHandler<TimerEventArgs> InitTimerEvent;
@@ -32,11 +32,11 @@ namespace DelegatesEventsLab.model
         public void StartCountdown()
         {
             Console.WriteLine();
-            OnInitTimerEvent(new TimerEventArgs("Initiated timer. Started " + CountdownLength + " seconds countdown", CountdownLength));
+            OnInitTimerEvent(new TimerEventArgs("Initiated timer " + Name + ".\nStarted " + CountdownLength + " seconds countdown", CountdownLength));
             int waitTime = CountdownLength;
             while (waitTime > 0)
             {
-                if (waitTime == notificationThreshold)
+                if (waitTime == _notificationThreshold)
                 {
                     OnRunTimerEvent(new TimerEventArgs(Convert.ToString(waitTime--), CountdownLength));
                 }

@@ -17,7 +17,7 @@ namespace _17_04_20_Delegates
             string password2 = Console.ReadLine();
             // Используем лямбда выражение 
             BoolPassword bp = (s1, s2) => s1 == s2;
-            
+
             if (bp(password1, password2))
                 Console.WriteLine("Registration succes!");
             else
