@@ -8,23 +8,23 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\maxim\\.nuget\\packages\\": {},
+    "C:\\Users\\Maxim\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\Labs\\CollectionType\\CollectionType.csproj",
-      "projectName": "CollectionType",
-      "projectPath": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\Labs\\CollectionType\\CollectionType.csproj",
-      "packagesPath": "C:\\Users\\maxim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\Labs\\CollectionType\\obj\\",
+      "projectUniqueName": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\Labs\\CollectionType\\CollectionsLab.csproj",
+      "projectName": "CollectionsLab",
+      "projectPath": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\Labs\\CollectionType\\CollectionsLab.csproj",
+      "packagesPath": "C:\\Users\\Maxim\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\Labs\\CollectionType\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

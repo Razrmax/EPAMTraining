@@ -1,42 +1,79 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
-namespace CollectionType.models
+namespace CollectionsLab.models
 {
-    class CollectionType<T>
+    class CollectionType<T> : IEnumerable<T> where T : GeometricShape
     {
-        private List<T> objects;
+        #region Fields
+        private readonly List<T> _container;
+        #endregion
 
-        public CollectionType(T obj)
+        #region Constructors
+        public CollectionType()
         {
-            objects.Add(obj);
+            _container = new List<T>();
         }
+        #endregion
+
+        #region Properties
+
+        public int Count
+        {
+            get { return _container.Count; }
+        }
+        #endregion
+
+        #region Indexers
+
+        public T this[int index]
+        {
+            get
+            {
+                if (index < 0 || index >= Count)
+                    throw new IndexOutOfRangeException();
+                return _container[index];
+            }
+
+            set
+            {
+                if (index < 0 || index >= Count)
+                    throw new IndexOutOfRangeException();
+                _container[index] = value;
+            }
+        }
+        
+
+        #endregion
 
         public void ObjectType()
         {
             Console.WriteLine("Object type: " + typeof(T));
         }
 
-        public void Add(T obj)
+        public void Add(T shape)
         {
-            if (objects.GetType().Equals(obj))
-            {
-                objects.Add(obj);
-            }
+            _container.Add(shape);
         }
 
-        public void Remove(T obj)
+        public T Remove(T shape)
         {
-            if (objects.Contains(obj))
+            var element = _container.FirstOrDefault(s => s == shape);
+            if (element != null)
             {
-                objects.Remove(obj);
+                _container.Remove(element);
+                return element;
             }
+
+            throw new NullReferenceException();
         }
 
         public override string ToString()
         {
             string str = "";
-            foreach (var item in objects)
+            foreach (var item in _container)
             {
                 str += item.ToString();
             }
@@ -44,6 +81,16 @@ namespace CollectionType.models
             return str;
         }
 
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
+
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            return _container.GetEnumerator();
+        }
 
         ~CollectionType()
         {

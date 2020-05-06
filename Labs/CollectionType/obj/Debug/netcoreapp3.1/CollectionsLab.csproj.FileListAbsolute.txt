@@ -1,0 +1,13 @@
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\CollectionType\bin\Debug\netcoreapp3.1\CollectionsLab.exe
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\CollectionType\bin\Debug\netcoreapp3.1\CollectionsLab.deps.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\CollectionType\bin\Debug\netcoreapp3.1\CollectionsLab.runtimeconfig.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\CollectionType\bin\Debug\netcoreapp3.1\CollectionsLab.runtimeconfig.dev.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\CollectionType\bin\Debug\netcoreapp3.1\CollectionsLab.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\CollectionType\bin\Debug\netcoreapp3.1\CollectionsLab.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\CollectionType\obj\Debug\netcoreapp3.1\CollectionsLab.csprojAssemblyReference.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\CollectionType\obj\Debug\netcoreapp3.1\CollectionsLab.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\CollectionType\obj\Debug\netcoreapp3.1\CollectionsLab.AssemblyInfoInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\CollectionType\obj\Debug\netcoreapp3.1\CollectionsLab.AssemblyInfo.cs
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\CollectionType\obj\Debug\netcoreapp3.1\CollectionsLab.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\CollectionType\obj\Debug\netcoreapp3.1\CollectionsLab.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\CollectionType\obj\Debug\netcoreapp3.1\CollectionsLab.genruntimeconfig.cache

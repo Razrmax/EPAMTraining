@@ -74,7 +74,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "29_04_20", "CodePlayGround\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Labs 04_05_20", "Labs 04_05_20", "{AE7B460F-46C3-4D08-8448-5304A247AEC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionType", "Labs\CollectionType\CollectionType.csproj", "{618BDBEA-2898-4298-A766-C643DE01DEFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CollectionsLab", "Labs\CollectionType\CollectionsLab.csproj", "{618BDBEA-2898-4298-A766-C643DE01DEFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
