@@ -44,10 +44,11 @@ namespace CollectionsLab.models
                 _container[index] = value;
             }
         }
-        
+
 
         #endregion
 
+        #region Methods
         public void ObjectType()
         {
             Console.WriteLine("Object type: " + typeof(T));
@@ -80,21 +81,24 @@ namespace CollectionsLab.models
 
             return str;
         }
+        #endregion
 
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
         }
 
-
         public IEnumerator<T> GetEnumerator()
         {
             return _container.GetEnumerator();
         }
 
+        #region Deconstructor
         ~CollectionType()
         {
-            Console.WriteLine("Destructor has been called"  );
+            Console.WriteLine("Destructor has been called");
         }
+
+        #endregion    
     }
 }
