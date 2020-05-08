@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\CodePlayGround\\29_04_20\\29_04_20.csproj": {}
+    "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\CodePlayGround\\29_04_20\\29_04_20.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\CodePlayGround\\29_04_20\\29_04_20.csproj": {
+    "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\CodePlayGround\\29_04_20\\29_04_20.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\CodePlayGround\\29_04_20\\29_04_20.csproj",
+        "projectUniqueName": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\CodePlayGround\\29_04_20\\29_04_20.csproj",
         "projectName": "29_04_20",
-        "projectPath": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\CodePlayGround\\29_04_20\\29_04_20.csproj",
-        "packagesPath": "C:\\Users\\maxim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maxim\\Desktop\\Programming\\EPAMTraining\\CodePlayGround\\29_04_20\\obj\\",
+        "projectPath": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\CodePlayGround\\29_04_20\\29_04_20.csproj",
+        "packagesPath": "C:\\Users\\Maxim\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Maxim\\Desktop\\Programming\\EPAMTraining\\CodePlayGround\\29_04_20\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Maxim\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

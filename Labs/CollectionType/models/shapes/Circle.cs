@@ -13,8 +13,8 @@ namespace CollectionsLab.models.shapes
         }
         public void CalcAllAProperties()
         {
-            Perimeter = Dimensions[0] + Dimensions[1] + Dimensions[2];
-            Area = Dimensions[3] * Dimensions[1] / 2;
+            Perimeter = 2 * Math.PI * (Dimensions[0]/2);
+            Area =  Math.PI * Math.Pow(Dimensions[0]/2, 2);
         }
 
         public override string ToString()
