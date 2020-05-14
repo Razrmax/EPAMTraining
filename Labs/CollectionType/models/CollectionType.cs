@@ -5,6 +5,10 @@ using System.Linq;
 
 namespace CollectionsLab.models
 {
+    /// <summary>
+    /// CollectionType class with T GeometricShape elements
+    /// </summary>
+    /// <typeparam name="T">GeometricShape</typeparam>
     class CollectionType<T> : IEnumerable<T> where T : GeometricShape
     {
         #region Fields
@@ -61,7 +65,7 @@ namespace CollectionsLab.models
 
         public T Remove(T shape)
         {
-            var element = _container.FirstOrDefault(s => s == shape);
+            var element = _container.FirstOrDefault(s => s.Equals(shape));
             if (element != null)
             {
                 _container.Remove(element);
@@ -73,16 +77,16 @@ namespace CollectionsLab.models
 
         public override string ToString()
         {
-            string str = "";
-            foreach (var item in _container)
-            {
-                str += item.ToString();
-            }
-
+            Console.WriteLine("Total elements: {0}\nElements:", Count);
+            Console.WriteLine("Total perimeter of all elements of collection: " + _container.Sum(shape => shape.Perimeter));
+            Console.WriteLine("Total area of all elements of collection: " + _container.Sum(shape => shape.Area));
+            string str = string.Join("\n", _container.Select(shape => shape.ToString()));
+            
             return str;
         }
         #endregion
 
+        #region Enumerators
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
@@ -91,14 +95,14 @@ namespace CollectionsLab.models
         public IEnumerator<T> GetEnumerator()
         {
             return _container.GetEnumerator();
-        }
+        } 
+        #endregion
 
         #region Deconstructor
         ~CollectionType()
         {
             Console.WriteLine("Destructor has been called");
         }
-
-        #endregion    
+        #endregion
     }
 }

@@ -1,0 +1,13 @@
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\11_05 Lab\obj\Debug\netcoreapp3.1\11_05 Lab.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\11_05 Lab\obj\Debug\netcoreapp3.1\11_05 Lab.AssemblyInfoInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\11_05 Lab\obj\Debug\netcoreapp3.1\11_05 Lab.AssemblyInfo.cs
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\11_05 Lab\bin\Debug\netcoreapp3.1\11_05 Lab.exe
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\11_05 Lab\bin\Debug\netcoreapp3.1\11_05 Lab.deps.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\11_05 Lab\bin\Debug\netcoreapp3.1\11_05 Lab.runtimeconfig.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\11_05 Lab\bin\Debug\netcoreapp3.1\11_05 Lab.runtimeconfig.dev.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\11_05 Lab\bin\Debug\netcoreapp3.1\11_05 Lab.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\11_05 Lab\bin\Debug\netcoreapp3.1\11_05 Lab.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\11_05 Lab\obj\Debug\netcoreapp3.1\11_05 Lab.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\11_05 Lab\obj\Debug\netcoreapp3.1\11_05 Lab.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\11_05 Lab\obj\Debug\netcoreapp3.1\11_05 Lab.genruntimeconfig.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\11_05 Lab\obj\Debug\netcoreapp3.1\11_05 Lab.csprojAssemblyReference.cache
