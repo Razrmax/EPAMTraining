@@ -1,0 +1,13 @@
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\15_05 XML\bin\Debug\netcoreapp3.1\15_05 XML.exe
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\15_05 XML\bin\Debug\netcoreapp3.1\15_05 XML.deps.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\15_05 XML\bin\Debug\netcoreapp3.1\15_05 XML.runtimeconfig.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\15_05 XML\bin\Debug\netcoreapp3.1\15_05 XML.runtimeconfig.dev.json
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\15_05 XML\bin\Debug\netcoreapp3.1\15_05 XML.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\15_05 XML\bin\Debug\netcoreapp3.1\15_05 XML.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\15_05 XML\obj\Debug\netcoreapp3.1\15_05 XML.csproj.CoreCompileInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\15_05 XML\obj\Debug\netcoreapp3.1\15_05 XML.AssemblyInfoInputs.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\15_05 XML\obj\Debug\netcoreapp3.1\15_05 XML.AssemblyInfo.cs
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\15_05 XML\obj\Debug\netcoreapp3.1\15_05 XML.dll
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\15_05 XML\obj\Debug\netcoreapp3.1\15_05 XML.pdb
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\15_05 XML\obj\Debug\netcoreapp3.1\15_05 XML.genruntimeconfig.cache
+C:\Users\Maxim\Desktop\Programming\EPAMTraining\CodePlayGround\15_05 XML\obj\Debug\netcoreapp3.1\15_05 XML.csprojAssemblyReference.cache

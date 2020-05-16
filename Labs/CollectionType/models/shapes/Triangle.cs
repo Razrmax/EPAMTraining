@@ -5,7 +5,8 @@ using CollectionsLab.interfaces;
 
 namespace CollectionsLab.models.shapes
 {
-    class Triangle : GeometricShape, IShapePropertiesCalculator
+    [Serializable]
+    public class Triangle : GeometricShape, IShapePropertiesCalculator
     {
         public Triangle(string shapeType, double[] dimensions) : base(shapeType, dimensions)
         {

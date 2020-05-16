@@ -5,7 +5,8 @@ using CollectionsLab.interfaces;
 
 namespace CollectionsLab.models.shapes
 {
-    class Circle : GeometricShape, IShapePropertiesCalculator
+    [Serializable]
+    public class Circle : GeometricShape, IShapePropertiesCalculator
     {
         public Circle(string shapeType, double[] dimensions) : base(shapeType, dimensions)
         {

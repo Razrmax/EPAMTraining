@@ -1,5 +1,8 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
 using CollectionsLab.exceptions;
 using CollectionsLab.models;
 using CollectionsLab.models.shapes;
@@ -8,10 +11,12 @@ namespace CollectionsLab
 {
     class Program
     {
+        
         static void Main()
         {
             bool exit = false;
             CollectionType<GeometricShape>[] collectionsArr = RandomCollectionGenerator();
+            FileManager fileManager = new FileManager();
             
             while (!exit)
             {
@@ -23,6 +28,32 @@ namespace CollectionsLab
                     string command = inputLine[0];
                     switch (command)
                     {
+                        case "save":
+                            fileManager.SaveCollection(collectionsArr);
+                            break;
+                        case "load":
+                            collectionsArr = fileManager.LoadCollection();
+                            break;
+                        case "sort":
+                            if (inputLine.Length >= 3)
+                            {
+                                if (inputLine[1] == "asc")
+                                {
+                                    if (inputLine[2] == "area" || inputLine[2] == "perim")
+                                    {
+                                        collectionsArr = SortCollectionByFieldAscending(collectionsArr, inputLine[2]);
+                                    }
+                                    
+                                }
+                                else if (inputLine[1] == "desc")
+                                {
+                                    if (inputLine[2] == "area" || inputLine[2] == "perim")
+                                    {
+                                        collectionsArr = SortCollectionByFieldDescending(collectionsArr, inputLine[2]);
+                                    }
+                                }
+                            }
+                            break;
                         case "gen":
                             collectionsArr = RandomCollectionGenerator();
                             break;
@@ -100,23 +131,42 @@ namespace CollectionsLab
             Console.WriteLine("General commands:\ngen\t\tGenerates a random array of collections with random Geometric Shape generics, each with a random value of elements\n" +
                               "display\t\tDisplays values of the collection of elements\ncount + x\t\tDisplay the number of elements of a collection contains 'x' elements in them\n" +
                               "find max field\t\tfinds the collection with a maximum aggregate value of elements based on a specified field ('perimeter' or 'area')\n" +
-                              "find min field\t\tfinds the collection with a minimum aggregate value of elements based on a specified field ('perimeter' or 'area')\n" +
-                              "exit\t\texits the application.\n\n");
+                              "find min field\t\tfinds the collection with a minimum aggregate value of elements based on a specified field ('perimeter' or 'area')\n"
+                              + "save\t\tsaves current collection of elements to a save file\n"
+                              + "load\t\tloads an existing collection of elements from a saved file"
+                              + "sort asc area (or perim)\t\tSorts the whole collection of elements in ascending order from the lowest field (area or perim"
+                              + "sort desc area (or perim)\t\tSorts the whole collection of elements in descending order from the lowest field (area or perim"
+                              + "exit\t\texits the application.\n\n");
         }
 
         #region CollectionSortAndFindMinMax
+        private static CollectionType<GeometricShape>[] SortCollectionByFieldDescending(CollectionType<GeometricShape>[] collectionsArr, string fieldName)
+        {
+            CollectionType<GeometricShape>[] result = fieldName == "area" ? collectionsArr.OrderByDescending(c => c.Sum(s => s.Area)).ToArray()
+                : collectionsArr.OrderByDescending(c => c.Sum(s => s.Perimeter)).ToArray();
+            return result;
+        }
+
+        private static CollectionType<GeometricShape>[] SortCollectionByFieldAscending(
+            CollectionType<GeometricShape>[] collectionsArr, string fieldName)
+        {
+            CollectionType<GeometricShape>[] result = fieldName == "area" ? collectionsArr.OrderBy(c => c.Sum(s => s.Area)).ToArray()
+                : collectionsArr.OrderBy(c => c.Sum(s => s.Perimeter)).ToArray();
+            return result;
+        }
+        
         static CollectionType<GeometricShape> FindMaxCollectionByField(CollectionType<GeometricShape>[] collectionTypeArr, string fieldName)
         {
-            CollectionType<GeometricShape> collectionMaxArea = fieldName == "area" ? collectionTypeArr.OrderByDescending(collection => collection.Max(shape => shape.Area)).ToArray().First() : collectionTypeArr.OrderByDescending(collection => collection.Max(shape => shape.Perimeter)).ToArray().First();
+            CollectionType<GeometricShape> maxFieldValueCollection = fieldName == "area" ? collectionTypeArr.OrderByDescending(collection => collection.Max(shape => shape.Area)).ToArray().First() : collectionTypeArr.OrderByDescending(collection => collection.Max(shape => shape.Perimeter)).ToArray().First();
 
-            return collectionMaxArea;
+            return maxFieldValueCollection;
         }
 
         static CollectionType<GeometricShape> FindMinCollectionByField(CollectionType<GeometricShape>[] collectionTypeArr, string fieldName)
         {
-            CollectionType<GeometricShape> collectionMaxArea = fieldName == "area" ? collectionTypeArr.OrderByDescending(collection => collection.Max(shape => shape.Area)).ToArray().Last() : collectionTypeArr.OrderByDescending(collection => collection.Max(shape => shape.Perimeter)).ToArray().Last();
+            CollectionType<GeometricShape> maxFieldValueCollection = fieldName == "area" ? collectionTypeArr.OrderByDescending(collection => collection.Max(shape => shape.Area)).ToArray().Last() : collectionTypeArr.OrderByDescending(collection => collection.Max(shape => shape.Perimeter)).ToArray().Last();
 
-            return collectionMaxArea;
+            return maxFieldValueCollection;
         }
         #endregion
 
@@ -195,6 +245,53 @@ namespace CollectionsLab
             }
 
             return n;
+        }
+    }
+
+    class FileManager
+    {
+        private readonly string _filePath =
+            @"C:\Users\Maxim\Desktop\Programming\EPAMTraining\Labs\CollectionType\save\collection.sav";
+        
+        
+
+        internal void SaveCollection(CollectionType<GeometricShape>[] colllectionArr)
+        {
+            
+            FileStream fileStream = new FileStream(_filePath, FileMode.Create);
+            BinaryFormatter formatter = new BinaryFormatter();
+            try
+            {
+                formatter.Serialize(fileStream, colllectionArr);
+            }
+            catch (SerializationException e)
+            {
+                Console.WriteLine("Failed saving file");
+            }
+            finally
+            {
+                fileStream.Close();
+            }
+        }
+
+        internal CollectionType<GeometricShape>[] LoadCollection()
+        {
+            FileStream fileStream = new FileStream(_filePath, FileMode.Open);
+            BinaryFormatter formatter = new BinaryFormatter();
+            CollectionType<GeometricShape>[] collectionArr = null;
+            try
+            {
+                collectionArr = (CollectionType<GeometricShape>[]) formatter.Deserialize(fileStream);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Failed loading file");
+            }
+            finally
+            {
+                fileStream.Close();
+            }
+            return collectionArr;
         }
     }
 }

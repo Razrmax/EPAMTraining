@@ -9,25 +9,42 @@ namespace CollectionsLab.models
     /// CollectionType class with T GeometricShape elements
     /// </summary>
     /// <typeparam name="T">GeometricShape</typeparam>
-    class CollectionType<T> : IEnumerable<T> where T : GeometricShape
+    [Serializable]
+    public class CollectionType<T> : ICollection, IEnumerable<T> where T : GeometricShape
     {
         #region Fields
-        private readonly List<T> _container;
+        public readonly List<T> Container;
         #endregion
 
         #region Constructors
         public CollectionType()
         {
-            _container = new List<T>();
+            Container = new List<T>();
         }
         #endregion
 
         #region Properties
 
+        public void CopyTo(Array array, int index)
+        {
+            throw new NotImplementedException();
+        }
+
         public int Count
         {
-            get { return _container.Count; }
+            get { return Container.Count; }
         }
+
+        public bool IsSynchronized
+        {
+            get { return false; }
+        }
+        
+        public object SyncRoot
+        {
+            get { return this; }
+        }
+
         #endregion
 
         #region Indexers
@@ -38,14 +55,14 @@ namespace CollectionsLab.models
             {
                 if (index < 0 || index >= Count)
                     throw new IndexOutOfRangeException();
-                return _container[index];
+                return Container[index];
             }
 
             set
             {
                 if (index < 0 || index >= Count)
                     throw new IndexOutOfRangeException();
-                _container[index] = value;
+                Container[index] = value;
             }
         }
 
@@ -60,15 +77,15 @@ namespace CollectionsLab.models
 
         public void Add(T shape)
         {
-            _container.Add(shape);
+            Container.Add(shape);
         }
 
         public T Remove(T shape)
         {
-            var element = _container.FirstOrDefault(s => s.Equals(shape));
+            var element = Container.FirstOrDefault(s => s.Equals(shape));
             if (element != null)
             {
-                _container.Remove(element);
+                Container.Remove(element);
                 return element;
             }
 
@@ -78,9 +95,9 @@ namespace CollectionsLab.models
         public override string ToString()
         {
             Console.WriteLine("Total elements: {0}\nElements:", Count);
-            Console.WriteLine("Total perimeter of all elements of collection: " + _container.Sum(shape => shape.Perimeter));
-            Console.WriteLine("Total area of all elements of collection: " + _container.Sum(shape => shape.Area));
-            string str = string.Join("\n", _container.Select(shape => shape.ToString()));
+            Console.WriteLine("Total perimeter of all elements of collection: " + Container.Sum(shape => shape.Perimeter));
+            Console.WriteLine("Total area of all elements of collection: " + Container.Sum(shape => shape.Area));
+            string str = string.Join("\n", Container.Select(shape => shape.ToString()));
             
             return str;
         }
@@ -94,7 +111,7 @@ namespace CollectionsLab.models
 
         public IEnumerator<T> GetEnumerator()
         {
-            return _container.GetEnumerator();
+            return Container.GetEnumerator();
         } 
         #endregion
 

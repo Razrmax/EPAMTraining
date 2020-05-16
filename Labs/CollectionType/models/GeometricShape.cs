@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using CollectionsLab.interfaces;
 
 namespace CollectionsLab.models
 {
-    class GeometricShape : IGeometricShape, IComparable<GeometricShape>
+    [Serializable]
+    public class GeometricShape : IGeometricShape, IComparable<GeometricShape>
     {
         public string ShapeType { get; set; }
         public double[] Dimensions { get; set; }
